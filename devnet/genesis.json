@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2022-07-12T11:14:30.925035Z",
-  "chain_id": "dYmension",
+  "genesis_time": "2022-07-13T12:36:57.349575Z",
+  "chain_id": "dymension",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -33,14 +33,14 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "cosmos1lnnl4wrsxmgkdhxm5tv9tzqhtm0z6el4uggjvd",
+          "address": "dym1elnm7dgefjwz8mtj0lsw2t4esn6quh2senc7lf",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "cosmos1xgu2fppuhrqtzze5nmk70rvctx8htyfhq73ytx",
+          "address": "dym1enxrqkkx8lcssh6m83tpj0vw85xn8fqmsr5cem",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -57,19 +57,19 @@
       },
       "balances": [
         {
-          "address": "cosmos1xgu2fppuhrqtzze5nmk70rvctx8htyfhq73ytx",
+          "address": "dym1enxrqkkx8lcssh6m83tpj0vw85xn8fqmsr5cem",
           "coins": [
             {
-              "denom": "stake",
+              "denom": "dym",
               "amount": "200000000"
             }
           ]
         },
         {
-          "address": "cosmos1lnnl4wrsxmgkdhxm5tv9tzqhtm0z6el4uggjvd",
+          "address": "dym1elnm7dgefjwz8mtj0lsw2t4esn6quh2senc7lf",
           "coins": [
             {
-              "denom": "stake",
+              "denom": "dym",
               "amount": "250000000"
             }
           ]
@@ -85,7 +85,7 @@
     "crisis": {
       "constant_fee": {
         "amount": "1000",
-        "denom": "stake"
+        "denom": "dym"
       }
     },
     "distribution": {
@@ -136,19 +136,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "cosmos1lnnl4wrsxmgkdhxm5tv9tzqhtm0z6el4uggjvd",
-                "validator_address": "cosmosvaloper1lnnl4wrsxmgkdhxm5tv9tzqhtm0z6el4euu8q7",
+                "delegator_address": "dym1elnm7dgefjwz8mtj0lsw2t4esn6quh2senc7lf",
+                "validator_address": "dymvaloper1elnm7dgefjwz8mtj0lsw2t4esn6quh2s6cyupn",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "qtI7onGa4yhgaiupXGv5MbLWX5ORySGzHzaORelYvPo="
+                  "key": "nhpfXRoF0wNBTCs/iKP8ZFdpvftmualR1r7luzRLGzI="
                 },
                 "value": {
-                  "denom": "stake",
+                  "denom": "dym",
                   "amount": "125000000"
                 }
               }
             ],
-            "memo": "ce27c8cec04fa1e80ac5fded8a8c952fafe478e7@192.168.252.24:26656",
+            "memo": "f0fa9e6972f13336564d77ced1554eeac59add82@10.0.0.4:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -158,7 +158,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Az5guL3pq6XtRD0r1z5wVlAbzKkGrRdNIMyBjYLo679H"
+                  "key": "A+WcnuWidRKVi2C282zNPUDVtfj3xw5/VG2hO91YKtbX"
                 },
                 "mode_info": {
                   "single": {
@@ -176,7 +176,7 @@
             }
           },
           "signatures": [
-            "ll0StYAfFzUOJlc53gAVlqPrlhn696IvBXEIAVIwtIItlEzqArcwumpTmx0E8WP5MMGFUeDrhcL3r4fbKOxu3w=="
+            "1+Cb1huuOK16c0hOMnl0ZLCcLpEPap+E/NSXNnTwIQ8jEmjfugNJ+Vrtfb7vbbjW8z9qsdA8sI/p3VKsNDDFJA=="
           ]
         }
       ]
@@ -187,7 +187,7 @@
         "min_deposit": [
           {
             "amount": "10000000",
-            "denom": "stake"
+            "denom": "dym"
           }
         ]
       },
@@ -248,7 +248,7 @@
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
         "inflation_rate_change": "0.130000000000000000",
-        "mint_denom": "stake"
+        "mint_denom": "dym"
       }
     },
     "monitoringp": {
@@ -288,7 +288,7 @@
       "last_total_power": "0",
       "last_validator_powers": [],
       "params": {
-        "bond_denom": "stake",
+        "bond_denom": "dym",
         "historical_entries": 10000,
         "max_entries": 7,
         "max_validators": 100,
