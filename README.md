@@ -39,6 +39,7 @@ Start your node and sync to the latest block:
 > dymd start
 ```
 
+
 ## Create testnet validator
 
 Add your private key:
@@ -67,4 +68,3 @@ Check to see if your validator candidate is in the validator set:
 ```sh
 > dymd query staking validators
 ```
-
