@@ -20,7 +20,7 @@ Init chain and reset all the data:
 ___
 Download genesis file into `dymd`'s `config` directory:
 
-***As long as the `dymention`'s repository is private, manually download the file.***	
+***As long as the `dymension`'s repository is private, manually download the file.***	
 ```sh
 > curl -s https://raw.githubusercontent.com/dymensionxyz/networks/main/devnet/genesis.json > genesis.json
 > mv genesis.json ~/.dYmension/config/
