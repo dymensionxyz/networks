@@ -5,7 +5,7 @@
 Requires [Go version v1.18+](https://golang.org/doc/install).
 
 ```sh
-> git clone https://github.com/dymensionxyz/dymension.git && cd dYmension
+> git clone https://github.com/dymensionxyz/dymension.git && cd dymension
 > sudo curl https://get.ignite.com/cli! | sudo bash
 > ignite chain build
 ```
@@ -14,7 +14,7 @@ Requires [Go version v1.18+](https://golang.org/doc/install).
 
 Init chain and reset all the data:
 ```sh
-> dymd init <moniker-name> --chain-id=dYmension
+> dymd init <moniker-name> --chain-id=dymension
 > dymd tendermint unsafe-reset-all
 ```
 ___
@@ -51,7 +51,7 @@ ___
 Create validator:
 ```sh
 > dymd tx staking create-validator \
-   --amount 50000000stake \
+   --amount 50000000dym \
    --commission-max-change-rate "0.1"  \
    --commission-max-rate "0.20"  \
    --commission-rate "0.1"  \
@@ -59,8 +59,8 @@ Create validator:
    --details "validators write bios too" \
    --pubkey=$(dymd tendermint show-validator) \
    --moniker <moniker-name> \
-   --chain-id dYmension \
-   --gas-prices 0.025stake \
+   --chain-id dymension \
+   --gas-prices 0.025 \
    --from $(dymd keys show <key-name> -a)
 ```
 ___
