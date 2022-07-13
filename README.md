@@ -1,4 +1,4 @@
-# dYmention
+# dYmension
 
 ## Installation
 
