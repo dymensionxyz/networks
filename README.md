@@ -5,9 +5,7 @@
 Requires [Go version v1.18+](https://golang.org/doc/install).
 
 ```sh
-> git clone https://github.com/dymensionxyz/dymension.git && cd dYmension
-> sudo curl https://get.ignite.com/cli! | sudo bash
-> ignite chain build
+> git clone https://github.com/dymensionxyz/dymension.git && cd dymension && make
 ```
 
 ## Start your node
