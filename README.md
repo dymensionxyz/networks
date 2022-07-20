@@ -1,42 +1,72 @@
-# dYmention
+# dYmension
 
-## Installation
+## Install
 
 Requires [Go version v1.18+](https://golang.org/doc/install).
 
 ```sh
-> git clone https://github.com/dymensionxyz/dymension.git && cd dymension && make
+> git clone https://github.com/dymensionxyz/dymension.git && cd dymension
+> make install
 ```
 
-## Start your node
+## Start your node by script 
+Init, setup and run:
+```sh
+> CHAIN_ID=devnet MONIKER_NAME=<miniker-name> TOKEN=<github-access-token> ./scripts/setup_and_run.sh
+```
+***As long as the `dymension`'s networks repository is private, we should add github personal access token.***
 
+## Start your node manually
 Init chain and reset all the data:
 ```sh
-> dymd init <moniker-name> --chain-id=dYmension
+> dymd init <moniker-name> --chain-id=devnet
 > dymd tendermint unsafe-reset-all
 ```
-___
 Download genesis file into `dymd`'s `config` directory:
 
-***As long as the `dymention`'s repository is private, manually download the file.***	
+___
+
 ```sh
-> curl -s https://raw.githubusercontent.com/dymensionxyz/networks/main/devnet/genesis.json > genesis.json
-> mv genesis.json ~/.dYmension/config/
+> curl -s https://[TOKEN]@raw.githubusercontent.com/dymensionxyz/networks/main/devnet/genesis.json > genesis.json
+> mv genesis.json ~/.dymension/config/
 ```
+***As long as the `dymension`'s networks repository is private, we should add github personal access token.***
+
 ___
-Modify your `dymd`'s `config/config.toml` to include the other participants as persistent peers:
-```text
-# Comma separated list of nodes to keep persistent connections to
-persistent_peers = "[validator_address]@[ip_address]:[port],[validator_address]@[ip_address]:[port]"
+
+Set persistent peers (in the tendermint configuration):
+```sh
+> PEERS="<validator_address>@<ip_address>:<port>,<validator_address>@<ip_address>:<port>"
+> sed -i'' -e "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" ~/.dymension/config/config.toml
 ```
-You can find `validator_address` by running `./dymd tendermint show-node-id`. 
-The default `port` is 26656.
+
 ___
+
+Set chain-id (in the client configuration):
+```sh
+> sed -i'' -e 's/^chain-id *= .*/chain-id = "devnet"/' ~/.dymension/config/client.toml
+```
+
+___
+
+*State Sync*
+
+To enable state sync, visit {dymension-explorer-link} to get a recent block height and corresponding hash.
+
+Set these parameters in the code snippet below `<block-height>` and `<block-hash>`
+```sh
+> sed -i'' -e 's/^enable *= false/enable = true/' ~/.dymension/config/config.toml
+> sed -i'' -e 's/^trust_height *= .*/trust_height = <block-height>/' ~/.dymension/config/config.toml
+> sed -i'' -e 's/^trust_hash *= .*/trust_hash = "<block-hash>"/' ~/.dymension/config/config.toml
+> sed -i'' -e 's/^rpc_servers *= .*/rpc_servers = "https:\/\/rpc.cosmos.network:443"/' ~/.dymension/config/config.toml
+```
+
+___
+
 Start your node and sync to the latest block:
 ```sh
 > dymd start
 ```
-
 
 ## Create testnet validator
 
@@ -49,7 +79,7 @@ ___
 Create validator:
 ```sh
 > dymd tx staking create-validator \
-   --amount 50000000stake \
+   --amount 50000000dym \
    --commission-max-change-rate "0.1"  \
    --commission-max-rate "0.20"  \
    --commission-rate "0.1"  \
@@ -57,8 +87,8 @@ Create validator:
    --details "validators write bios too" \
    --pubkey=$(dymd tendermint show-validator) \
    --moniker <moniker-name> \
-   --chain-id dYmension \
-   --gas-prices 0.025stake \
+   --chain-id devnet \
+   --gas-prices 0.025 \
    --from $(dymd keys show <key-name> -a)
 ```
 ___
