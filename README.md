@@ -36,7 +36,7 @@ ___
 
 Set persistent peers (in the tendermint configuration):
 ```sh
-> PEERS="<validator_address>@<ip_address>:<port>,<validator_address>@<ip_address>:<port>"
+> PEERS='81d3d1cc389ac41a36c89c449bfc4282f7b494ef@44.209.89.17:26656'
 > sed -i'' -e "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" ~/.dymension/config/config.toml
 ```
 
