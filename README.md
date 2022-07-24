@@ -12,16 +12,16 @@ make install
 ## Set the following properties
 ```sh
 # should be one of the existing testnets you want to join.
-CHAIN_ID=devnet
+export CHAIN_ID=devnet
 
 # this can be any name of your choosing and will identify your validator in the explorer.
-MONIKER_NAME=<miniker-name>
+export MONIKER_NAME=<miniker-name>
 
 # as long as the `dymension`'s networks repository is private, we should add github personal access token.
-TOKEN=<github-access-token>
+export TOKEN=<github-access-token>
 
 # the base repo URL for the testnet
-CHAIN_REPO=https://$TOKEN@raw.githubusercontent.com/dymensionxyz/networks/main
+export CHAIN_REPO="https://$TOKEN@raw.githubusercontent.com/dymensionxyz/networks/main"
 ```
 
 
@@ -41,7 +41,7 @@ dymd tendermint unsafe-reset-all
 Download genesis file into `dymd`'s `config` directory:
 
 ```sh
-curl -s $CHAIN_REPO/$CHAIN_ID/genesis.json > genesis.json
+curl -s "$CHAIN_REPO/$CHAIN_ID/genesis.json" > genesis.json
 mv genesis.json ~/.dymension/config/
 ```
 
