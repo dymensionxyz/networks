@@ -19,6 +19,9 @@ MONIKER_NAME=<miniker-name>
 
 # as long as the `dymension`'s networks repository is private, we should add github personal access token.
 TOKEN=<github-access-token>
+
+# the base repo URL for the testnet
+CHAIN_REPO=https://$TOKEN@raw.githubusercontent.com/dymensionxyz/networks/main
 ```
 
 
@@ -38,13 +41,13 @@ dymd tendermint unsafe-reset-all
 Download genesis file into `dymd`'s `config` directory:
 
 ```sh
-curl -s https://$TOKEN@raw.githubusercontent.com/dymensionxyz/networks/main/$CHAIN_ID/genesis.json > genesis.json
+curl -s $CHAIN_REPO/$CHAIN_ID/genesis.json > genesis.json
 mv genesis.json ~/.dymension/config/
 ```
 
 Set persistent peers (in the tendermint configuration):
 ```sh
-PEERS='06bf14a552b22518ed6fff254d74331f60e965cd@44.209.89.17:26656'
+PEERS="$(curl -s "$CHAIN_REPO/$CHAIN_ID/persistent_peers.txt")"
 sed -i'' -e "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" ~/.dymension/config/config.toml
 ```
 
