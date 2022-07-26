@@ -13,17 +13,19 @@ make install
 ```sh
 # should be one of the existing testnets you want to join.
 export CHAIN_ID=devnet
-
+```
+```sh
 # this can be any name of your choosing and will identify your validator in the explorer.
 export MONIKER_NAME=<miniker-name>
-
+```
+```sh
 # as long as the `dymension`'s networks repository is private, we should add github personal access token.
 export TOKEN=<github-access-token>
-
-# the base repo URL for the testnet
-export CHAIN_REPO="https://$TOKEN@raw.githubusercontent.com/dymensionxyz/networks/main"
 ```
-
+```sh
+# enable state-sync for rapidly bootstraps a node.
+# export STATE_SYNC=1
+```
 
 ## Start your node by script 
 Init, setup and run:
@@ -41,14 +43,16 @@ dymd tendermint unsafe-reset-all
 Download genesis file into `dymd`'s `config` directory:
 
 ```sh
+CHAIN_REPO="https://$TOKEN@raw.githubusercontent.com/dymensionxyz/networks/main"
 curl -s "$CHAIN_REPO/$CHAIN_ID/genesis.json" > genesis.json
 mv genesis.json ~/.dymension/config/
 ```
 
-Set persistent peers (in the tendermint configuration):
+Update peers configurations:
 ```sh
 PEERS="$(curl -s "$CHAIN_REPO/$CHAIN_ID/persistent_peers.txt")"
-sed -i'' -e "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" ~/.dymension/config/config.toml
+sed -i'' -e "s/^persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" ~/.dymension/config/config.toml
+sed -i'' -e 's/^allow_duplicate_ip = false/allow_duplicate_ip = true/' ~/.dymension/config/config.toml
 ```
 
 Set chain-id (in the client configuration):
@@ -58,14 +62,16 @@ sed -i'' -e "s/^chain-id *= .*/chain-id = \"$CHAIN_ID\"/" ~/.dymension/config/cl
 
 *State Sync*
 
-To enable state sync, visit {dymension-explorer-link} to get a recent block height and corresponding hash.
-
-Set these parameters in the code snippet below `<block-height>` and `<block-hash>`
+Allow validators to rapidly join the network by syncing your node with a snapshot from a trusted block height.
 ```sh
-sed -i'' -e 's/^enable *= false/enable = true/' ~/.dymension/config/config.toml
-sed -i'' -e 's/^trust_height *= .*/trust_height = <block-height>/' ~/.dymension/config/config.toml
-sed -i'' -e 's/^trust_hash *= .*/trust_hash = "<block-hash>"/' ~/.dymension/config/config.toml
-sed -i'' -e 's/^rpc_servers *= .*/rpc_servers = "https:\/\/rpc.cosmos.network:443"/' ~/.dymension/config/config.toml
+# RPC_SERVER='rpc.dymension.xyz:26657'
+# TRUSTED_BLOCK=$(curl "$RPC_SERVER/commit" | jq -r "{height: .result.signed_header.header.height, hash: .result.signed_header.commit.block_id.hash}")
+# BLOCK_HEIGHT=$(echo "$TRUSTED_BLOCK" | jq -r ".height")
+# BLOCK_HASH=$(echo "$TRUSTED_BLOCK" | jq -r ".hash")
+# sed -i'' -e 's/^enable *= false/enable = true/' ~/.dymension/config/config.toml
+# sed -i'' -e "s/^trust_height *= .*/trust_height = $BLOCK_HEIGHT/" ~/.dymension/config/config.toml
+# sed -i'' -e "s/^trust_hash *= .*/trust_hash = \"$BLOCK_HASH\"/" ~/.dymension/config/config.toml
+# sed -i'' -e "s/^rpc_servers *= .*/rpc_servers = \"http:\/\/$RPC_SERVER,http:\/\/$RPC_SERVER\"/" ~/.dymension/config/config.toml
 ```
 
 Start your node and sync to the latest block:
