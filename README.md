@@ -2,7 +2,7 @@
 
 ## Install
 
-Requires [Go version v1.18+](https://golang.org/doc/install).
+Requires [Go version v1.18+](https://golang.org/doc/install) and [jq](https://cloudaffaire.com/faq/how-to-install-jq/).
 
 ```sh
 git clone https://github.com/dymensionxyz/dymension.git && cd dymension
