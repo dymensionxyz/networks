@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-07-21T09:47:12.652423528Z",
+  "genesis_time": "2022-08-04T07:52:52.453366743Z",
   "chain_id": "devnet",
   "initial_height": "1",
   "consensus_params": {
@@ -33,7 +33,7 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "dym10tlmnuct8van8wcrrsdp4el58k05nnnc58xca9",
+          "address": "dym1zzllwjsltfse962z8qxkerxc3ljx3dd82x6lsq",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -50,7 +50,7 @@
       },
       "balances": [
         {
-          "address": "dym10tlmnuct8van8wcrrsdp4el58k05nnnc58xca9",
+          "address": "dym1zzllwjsltfse962z8qxkerxc3ljx3dd82x6lsq",
           "coins": [
             {
               "denom": "dym",
@@ -120,11 +120,11 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "dym10tlmnuct8van8wcrrsdp4el58k05nnnc58xca9",
-                "validator_address": "dymvaloper10tlmnuct8van8wcrrsdp4el58k05nnnchv66rl",
+                "delegator_address": "dym1zzllwjsltfse962z8qxkerxc3ljx3dd82x6lsq",
+                "validator_address": "dymvaloper1zzllwjsltfse962z8qxkerxc3ljx3dd8fdxaw6",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "SDdqMiMUnthm9rEcj9N9JXoLWgerzT6gz4vnlqlEcU8="
+                  "key": "zAhn4DacfSKWKepzEZG1oh8I4TupU+IJO9czvfEReE0="
                 },
                 "value": {
                   "denom": "dym",
@@ -132,7 +132,7 @@
                 }
               }
             ],
-            "memo": "06bf14a552b22518ed6fff254d74331f60e965cd@172.17.0.2:26656",
+            "memo": "30e89eb1a58cd4bdd76da148e951cb59e215a37f@172.31.20.150:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -142,7 +142,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A0wrCN9VZKCpAt0GhdpYdcgJilY/8+P3LRjprt34TWHT"
+                  "key": "AzfR/ce7Fs5i+cQFMiBYmDQZCrzF0himzJ/EXNwkEdwF"
                 },
                 "mode_info": {
                   "single": {
@@ -160,7 +160,7 @@
             }
           },
           "signatures": [
-            "JAYFBNrLeXzAGCe7wW3c5U0cdcukBXooNyAhJlCcnlEgUYIYb032A6OE5U/bVXGoAc+rzNM0VVA+t0OKyJjH3g=="
+            "vY5OFvZ8n86DbOWuWV10leyYadb/89Yyl+pWmwKSQTIeluHbV4xMT4csM0Mn3xzFrRdCGZ01xXTY79Ngq5xbDw=="
           ]
         }
       ]
