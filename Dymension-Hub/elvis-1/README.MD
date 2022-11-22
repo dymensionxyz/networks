@@ -1,8 +1,14 @@
-# Welcome to Dymension's first public testnet, Elvis-1!
+# Welcome to the Dymension Hub's first public testnet, Elvis-1!
 
 ## Let's take care of business!
 
 _This testnet is non-incentivized. Validators for this testnet have been pre-selected._
+
+**Minimum hardware requirements:**
+
+-   8-16GB RAM
+-   100GB of disk space
+-   2 cores
 
 **Genesis File**
 
@@ -19,7 +25,7 @@ sha256sum ~/.dymension/config/genesis.json
 
 **dymd version**
 
-```bash
+```sh
 $ dymd version --long
 name: dymension
 server_name: dymd
@@ -41,120 +47,161 @@ commit:
 
 ## Setup
 
-**Install**
+**Prerequisites:** Make sure to have [Golang >=1.18](https://golang.org/).
 
-[Go version v1.18+](https://golang.org/doc/install) and [jq](https://cloudaffaire.com/faq/how-to-install-jq/).
+### Build from source
 
-```bash
-git clone https://github.com/dymensionxyz/dymension.git && cd dymension
-make install
+You need to ensure your gopath configuration is correct. If the following **'make'** step does not work then you might have to add these lines to your .profile or .zshrc in the users home folder:
+
+```sh
+nano ~/.profile
 ```
 
-```bash
-export CHAIN_ID="Dym-Testnet-1"
+```
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export GO111MODULE=on
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+```
 
+Source update .profile
 
+```sh
+source .profile
 ```
 
 ```sh
-# this can be any name of your choosing and will identify your validator in the explorer.
-export MONIKER_NAME=<moniker-name>
+git clone https://github.com/dymensionxyz/dymension.git
+cd dymension
+git checkout v0.1.0-alpha
+make build && make install
 ```
+
+This will build and install `dymd` binary into `$GOBIN`.
+
+Note: When building from source, it is important to have your `$GOPATH` set correctly. When in doubt, the following should do:
 
 ```sh
-# enable state-sync for rapidly bootstraps a node.
-# export STATE_SYNC=1
+mkdir ~/go
+export GOPATH=~/go
 ```
 
-## Start your node by script
-
-Init, setup and run:
+Check that you have the right Dymension version installed:
 
 ```sh
-./scripts/setup_and_run.sh
+$ dymd version --long
+name: dymension
+server_name: dymd
+version: HEAD-
+commit:
 ```
 
-## Start your node manually
+## Setup a Validator Node
 
-Init chain and reset all the data:
+Below are the instructions to generate & submit your genesis transaction
+
+### Generate genesis transaction (gentx)
+
+1. Initialize the Dymension directories and create the local genesis file with the correct chain-id:
+
+    ```bash
+    dymd init <moniker-name> --chain-id=elvis-1
+    ```
+
+2. Create a local key pair:
+
+    ```sh
+    > dymd keys add <key-name>
+    ```
+
+3. Add your account to your local genesis file with a given amount and the key you just created. Use only `10000000000udym`, other amounts will be ignored.
+
+    ```bash
+    dymd add-genesis-account $(dymd keys show <key-name> -a) 10000000000udym
+    ```
+
+4. Create the gentx, use only `9000000000udym`:
+
+    ```bash
+    dymd gentx <key-name> 9000000000udym --chain-id=elvis-1
+    ```
+
+    If all goes well, you will see a message similar to the following:
+
+    ```bash
+    Genesis transaction written to "/home/user/.dymension/config/gentx/gentx-******.json"
+    ```
+
+### Submit genesis transaction
+
+-   Fork [the testnets repo](https://github.com/dymensionXYZ/testnets/) into your Github account
+
+-   Clone your repo using
+
+    ```bash
+    git clone https://github.com/<your-github-username>/testnets
+    ```
+
+-   Copy the generated gentx json file to `<repo_path>/elvis-1/gentx/`
+
+    ```sh
+    > cd testnets/
+    > cp ~/.dym/config/gentx/gentx*.json ./elvis-1/gentx/
+    ```
+
+-   Commit and push to your repo
+-   Create a PR onto https://github.com/dymensionXYZ/testnets
+-   Only PRs from selected individuals / groups with a history successfully running nodes will be accepted. This is to ensure the network successfully starts on time.
+
+#### Running in production
+
+**Note, we'll be going through some upgrades for this testnet. Consider using [Cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor) to make your life easier.** Setting up Cosmovisor is covered in the [Dymension Documentation](https://docs.dymension.xyz/).
+
+Download Genesis file when the time is right. Put it in your `/home/<user>/.dym` folder.
+
+If you have not installed cosmovisor, create a systemd file for your Dymension service:
 
 ```sh
-dymd init "$MONIKER_NAME" --chain-id=$CHAIN_ID
-dymd tendermint unsafe-reset-all
+sudo nano /etc/systemd/system/dymd.service
 ```
 
-Download genesis file into `dymd`'s `config` directory:
+Copy and paste the following and update `<YOUR_USERNAME>` and `<CHAIN_ID>`:
 
 ```sh
-CHAIN_REPO="https://$TOKEN@raw.githubusercontent.com/dymensionxyz/networks/main"
-curl -s "$CHAIN_REPO/$CHAIN_ID/genesis.json" > genesis.json
-mv genesis.json ~/.dymension/config/
+Description=Dymension daemon
+After=network-online.target
+
+[Service]
+User=dymension
+ExecStart=/home/<YOUR_USERNAME>/go/bin/dymd start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
 ```
 
-Update peers configurations:
+Enable and start the new service:
 
 ```sh
-PEERS="$(curl -s "$CHAIN_REPO/$CHAIN_ID/persistent_peers.txt")"
-sed -i'' -e "s/^persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" ~/.dymension/config/config.toml
-sed -i'' -e 's/^allow_duplicate_ip = false/allow_duplicate_ip = true/' ~/.dymension/config/config.toml
+sudo systemctl enable dymd
+sudo systemctl start dymd
 ```
 
-Set chain-id (in the client configuration):
+Check status:
 
 ```sh
-sed -i'' -e "s/^chain-id *= .*/chain-id = \"$CHAIN_ID\"/" ~/.dymension/config/client.toml
+dymd status
 ```
 
-_State Sync_
-
-Allow validators to rapidly join the network by syncing your node with a snapshot from a trusted block height.
+Check logs:
 
 ```sh
-# RPC_SERVER='rpc.dymension.xyz:26657'
-# TRUSTED_BLOCK=$(curl "$RPC_SERVER/commit" | jq -r "{height: .result.signed_header.header.height, hash: .result.signed_header.commit.block_id.hash}")
-# BLOCK_HEIGHT=$(echo "$TRUSTED_BLOCK" | jq -r ".height")
-# BLOCK_HASH=$(echo "$TRUSTED_BLOCK" | jq -r ".hash")
-# sed -i'' -e 's/^enable *= false/enable = true/' ~/.dymension/config/config.toml
-# sed -i'' -e "s/^trust_height *= .*/trust_height = $BLOCK_HEIGHT/" ~/.dymension/config/config.toml
-# sed -i'' -e "s/^trust_hash *= .*/trust_hash = \"$BLOCK_HASH\"/" ~/.dymension/config/config.toml
-# sed -i'' -e "s/^rpc_servers *= .*/rpc_servers = \"http:\/\/$RPC_SERVER,http:\/\/$RPC_SERVER\"/" ~/.dymension/config/config.toml
+journalctl -u dymd -f
 ```
 
-Start your node and sync to the latest block:
+### Learn more
 
-```sh
-dymd start
-```
-
-## Create testnet validator
-
-Add your private key:
-
-```sh
-dymd keys add <key-name>
-```
-
-Create validator:
-
-**_Request tokens from any participant._**
-
-```sh
-dymd tx staking create-validator \
-   --amount 50000000dym \
-   --commission-max-change-rate "0.1"  \
-   --commission-max-rate "0.20"  \
-   --commission-rate "0.1"  \
-   --min-self-delegation "1" \
-   --details "validators write bios too" \
-   --pubkey=$(dymd tendermint show-validator) \
-   --moniker "$MONIKER_NAME" \
-   --chain-id $CHAIN_ID \
-   --gas-prices 0.025dym \
-   --from $(dymd keys show <key-name> -a)
-```
-
-Check to see if your validator candidate is in the validator set:
-
-```sh
-dymd query staking validators
-```
+-   [Cosmos Network](https://cosmos.network)
+-   [Dymension Documentation](https://docs.dymension.xyz/)
