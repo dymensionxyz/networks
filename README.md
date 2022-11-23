@@ -6,7 +6,7 @@ The Dymension network is a modular blockchain consisting of the Dymension Hub an
 
 **Dymension Hub**
 
--   [Elvis-1](./Dymension-Hub/dym-testnet-1/) -- The Dymension Hub
+-   [Elvis-1](./Dymension-Hub/elvis-1/) -- The Dymension Hub
 
 **RollApps**
 
