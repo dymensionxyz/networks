@@ -26,11 +26,10 @@ sha256sum ~/.dymension/config/genesis.json
 **dymd version**
 
 ```sh
-$ dymd version --long
 name: dymension
 server_name: dymd
-version: HEAD-
-commit:
+version: v0.1.0-alpha
+commit: f68b1000f040ace7c266b6c4b5e7c4a8b9a31378
 ```
 
 **Seed nodes**
@@ -89,11 +88,10 @@ export GOPATH=~/go
 Check that you have the right Dymension version installed:
 
 ```sh
-$ dymd version --long
 name: dymension
 server_name: dymd
-version: HEAD-
-commit:
+version: v0.1.0-alpha
+commit: f68b1000f040ace7c266b6c4b5e7c4a8b9a31378
 ```
 
 ## Setup a Validator Node

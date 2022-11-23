@@ -28,4 +28,4 @@ cp /home/<your-user>/go/bin/dymd $DAEMON_HOME/cosmovisor/upgrades/love/bin
 $DAEMON_HOME/cosmovisor/upgrades/moneta/bin/dymd version
 ```
 
-Let's rock n roll!
+Let's rock n roll! 🤟
