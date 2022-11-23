@@ -13,14 +13,14 @@ _This testnet is non-incentivized. Validators for this testnet have been pre-sel
 **Genesis File**
 
 ```bash
-
+TBA
 ```
 
 **Genesis sha256**
 
 ```bash
 sha256sum ~/.dymension/config/genesis.json
-#
+TBA
 ```
 
 **dymd version**
@@ -34,14 +34,14 @@ commit: f68b1000f040ace7c266b6c4b5e7c4a8b9a31378
 
 **Seed nodes**
 
-```
-
+```sh
+TBA
 ```
 
 **Persistent Peers**
 
-```
-
+```sh
+TBA
 ```
 
 ## Setup
