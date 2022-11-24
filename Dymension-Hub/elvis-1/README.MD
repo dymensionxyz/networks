@@ -4,24 +4,21 @@
 
 _This testnet is non-incentivized. Validators for this testnet have been pre-selected._
 
+## TLDR
+
+Block explorer: TBA
+
+Binaries: [v0.1.0-alpha](https://github.com/dymensionxyz/dymension/releases/tag/v0.1.0-alpha)
+
+Genesis file: TBA
+
+Seeds: TBA
+
 **Minimum hardware requirements:**
 
 -   8-16GB RAM
 -   100GB of disk space
 -   2 cores
-
-**Genesis File**
-
-```bash
-TBA
-```
-
-**Genesis sha256**
-
-```bash
-sha256sum ~/.dymension/config/genesis.json
-TBA
-```
 
 **dymd version**
 
@@ -30,18 +27,6 @@ name: dymension
 server_name: dymd
 version: v0.1.0-alpha
 commit: f68b1000f040ace7c266b6c4b5e7c4a8b9a31378
-```
-
-**Seed nodes**
-
-```sh
-TBA
-```
-
-**Persistent Peers**
-
-```sh
-TBA
 ```
 
 ## Setup
@@ -103,7 +88,7 @@ Below are the instructions to generate & submit your genesis transaction
 1. Initialize the Dymension directories and create the local genesis file with the correct chain-id:
 
     ```bash
-    dymd init <moniker-name> --chain-id=elvis-1
+    dymd init <moniker-name> --chain-id=elvis-1 --stake-denom=udym
     ```
 
 2. Create a local key pair:
@@ -143,13 +128,75 @@ Below are the instructions to generate & submit your genesis transaction
 -   Copy the generated gentx json file to `<repo_path>/elvis-1/gentx/`
 
     ```sh
-    > cd testnets/Dymension-Hub/elvis-1
-    > cp ~/.dym/config/gentx/gentx*.json ./gentx/
+    cd testnets/Dymension-Hub/elvis-1
+    cp ~/.dym/config/gentx/gentx*.json ./gentx/
     ```
 
 -   Commit and push to your repo
 -   Create a PR onto https://github.com/dymensionXYZ/testnets
 -   Only PRs from selected individuals / groups with a history successfully running nodes will be accepted. This is to ensure the network successfully starts on time.
+
+### Review Genesis File
+
+-   Once all gentx have been collected the Genesis file will be made available:
+
+**Genesis File**
+
+```bash
+TBA
+```
+
+**Genesis sha256**
+
+```bash
+sha256sum ~/.dymension/config/genesis.json
+TBA
+```
+
+**Validate the Genesis file**
+
+```bash
+dymd validate-genesis
+```
+
+Add seed nodes in config.toml.
+
+```sh
+vi $HOME/.dymension/config/config.toml
+```
+
+**Seed nodes**
+
+```bash
+# Comma separated list of seed nodes to connect to
+TBA
+```
+
+**Persistent Peers**
+
+```bash
+# Comma separated list of persistent peers to connect to
+TBA
+```
+
+#### Set validator gas fees
+
+You can set the minimum gas prices for transactions to be accepted into your node's mempool. This sets a lower bound on gas prices, preventing spam. Stakebird can accept gas in _any_ currency. To accept both DYM and ATOM for example, set `minimum-gas-prices` in `app.toml`.
+
+```sh
+> vi $HOME/.dymension/config/app.toml
+```
+
+```sh
+minimum-gas-prices = "0.025udym,0.025uatom"
+```
+
+### Genesis time is: 2022-11-24T14:00:00Z
+
+-   Begin the node, once 2/3rd of staked tokens are online after genesis time the blockchain has begun!
+    ```sh
+    dymd start
+    ```
 
 #### Running in production
 
