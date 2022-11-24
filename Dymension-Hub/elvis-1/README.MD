@@ -96,7 +96,7 @@ Below are the instructions to generate & submit your genesis transaction
 2. Create a local key pair:
 
     ```sh
-    > dymd keys add <key-name>
+    dymd keys add <key-name>
     ```
 
 3. Add your account to your local genesis file with a given amount and the key you just created. Use only `10000000000udym`, other amounts will be ignored.
@@ -183,10 +183,10 @@ TBA
 
 #### Set validator gas fees
 
-You can set the minimum gas prices for transactions to be accepted into your node's mempool. This sets a lower bound on gas prices, preventing spam. Stakebird can accept gas in _any_ currency. To accept both DYM and ATOM for example, set `minimum-gas-prices` in `app.toml`.
+You can set the minimum gas prices for transactions to be accepted into your node's mempool. This sets a lower bound on gas prices, preventing spam. Dymension can accept gas in _any_ currency. To accept both DYM and ATOM for example, set `minimum-gas-prices` in `app.toml`.
 
 ```sh
-> vi $HOME/.dymension/config/app.toml
+vi $HOME/.dymension/config/app.toml
 ```
 
 ```sh
