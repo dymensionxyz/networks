@@ -131,7 +131,7 @@ Below are the instructions to generate & submit your genesis transaction
 
     ```sh
     cd testnets/Dymension-Hub/elvis-1
-    cp ~/.dym/config/gentx/gentx*.json ./gentx/
+    cp ~/.dymension/config/gentx/gentx*.json ./gentx/
     ```
 
 -   Commit and push to your repo
