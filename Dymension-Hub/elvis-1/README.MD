@@ -6,6 +6,8 @@ _This testnet is non-incentivized. Validators for this testnet have been pre-sel
 
 ## TLDR
 
+Genesis time is: 2022-11-24T14:00:00Z
+
 Block explorer: TBA
 
 Binaries: [v0.1.0-alpha](https://github.com/dymensionxyz/dymension/releases/tag/v0.1.0-alpha)
