@@ -145,14 +145,14 @@ Below are the instructions to generate & submit your genesis transaction
 **Genesis File**
 
 ```bash
-TBA
+curl https://raw.githubusercontent.com/dymensionxyz/testnets/blob/main/Dymension-Hub/elvis-1/genesis.json > $HOME/.dymension/config/genesis.json
 ```
 
 **Genesis sha256**
 
 ```bash
 sha256sum ~/.dymension/config/genesis.json
-TBA
+445d8c0e102b677c7ef964752b36a42d984b59d8487c254b572d492c6c8e00ab ~/.dymension/config/genesis.json
 ```
 
 **Validate the Genesis file**
