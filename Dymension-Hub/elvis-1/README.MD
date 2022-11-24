@@ -148,7 +148,7 @@ Below are the instructions to generate & submit your genesis transaction
 
 ```bash
 sha256sum ~/.dymension/config/genesis.json
-23da3cb049c98527e768a974c184c0c70056d7f108dd9fe2101c071c3e937fbc ~/.dymension/config/genesis.json
+1be5d2e0127e7c4b7e2582095544da23b5add3c2d2227b8c055ad78da25f7afa ~/.dymension/config/genesis.json
 ```
 
 **Validate the Genesis file**
