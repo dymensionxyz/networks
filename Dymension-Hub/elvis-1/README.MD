@@ -12,7 +12,7 @@ Block explorer: TBA
 
 Binaries: [v0.1.0-alpha](https://github.com/dymensionxyz/dymension/releases/tag/v0.1.0-alpha)
 
-Genesis file: TBA
+Genesis file: [Genesis file](./genesis.json)
 
 Seeds: TBA
 
@@ -143,10 +143,6 @@ Below are the instructions to generate & submit your genesis transaction
 -   Once all gentx have been collected the Genesis file will be made available:
 
 **Genesis File**
-
-```bash
-curl https://raw.githubusercontent.com/dymensionxyz/testnets/blob/main/Dymension-Hub/elvis-1/genesis.json > $HOME/.dymension/config/genesis.json
-```
 
 **Genesis sha256**
 
