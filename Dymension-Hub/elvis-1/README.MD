@@ -152,7 +152,7 @@ curl https://raw.githubusercontent.com/dymensionxyz/testnets/blob/main/Dymension
 
 ```bash
 sha256sum ~/.dymension/config/genesis.json
-445d8c0e102b677c7ef964752b36a42d984b59d8487c254b572d492c6c8e00ab ~/.dymension/config/genesis.json
+23da3cb049c98527e768a974c184c0c70056d7f108dd9fe2101c071c3e937fbc ~/.dymension/config/genesis.json
 ```
 
 **Validate the Genesis file**
