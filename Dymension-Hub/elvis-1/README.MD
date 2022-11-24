@@ -90,7 +90,7 @@ Below are the instructions to generate & submit your genesis transaction
 1. Initialize the Dymension directories and create the local genesis file with the correct chain-id:
 
     ```bash
-    dymd init <moniker-name> --chain-id=elvis-1 --stake-denom=udym
+    dymd init <moniker-name> --chain-id=elvis-1
     ```
 
 2. Create a local key pair:
