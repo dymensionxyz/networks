@@ -1,4 +1,4 @@
-# Elvis-1 Love
+# Elvis-1 Upgrade
 
 This is the first upgrade proposal and you can query it via CLI.
 

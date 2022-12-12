@@ -10,4 +10,4 @@ Dymension is a network of modular blockchains consisting of the Dymension Hub an
 
 **RollApps**
 
--   [Curiosity-1](./RollApps/curiosity-1/) - Dymension-RDK Wasm RollApp for smart contract deployment and using IBC/{Juno} as the network fee
+-   Curiosity-1 - Dymension-RDK Wasm RollApp
