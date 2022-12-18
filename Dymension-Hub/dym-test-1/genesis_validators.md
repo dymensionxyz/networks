@@ -1,8 +1,4 @@
-# Welcome to the Dymension Hub's testnet!
-
-### Tesnets
-
--   [Elvis-1](/Dymension-Hub/elvis-1/README.MD)
+# Welcome Genesis Validators!
 
 ### TLDR
 
