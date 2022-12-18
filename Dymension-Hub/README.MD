@@ -1,4 +1,4 @@
-# Welcome to the Dymension Hub's first public testnet, Elvis-1!
+# Welcome to the Dymension Hub's testnet!
 
 ## Let's take care of business!
 
