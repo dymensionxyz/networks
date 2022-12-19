@@ -79,10 +79,10 @@ dymd config chain-id dym-test-1
 
 #### Generate genesis transaction (gentx)
 
-1. Initialize the Dymension directories and create the local genesis file with the correct chain-id:
+1. Initialize the Dymension directories and create the local genesis file with the correct chain-id. You will be asked to replace the temporary genesis file with the genesis.json file later.
 
 ```bash
-dymd init NODE_NAME_HERE --chain-id dym-test-1
+dymd init NODE_NAME_HERE
 ```
 
 2. Create a key pair:
@@ -94,23 +94,19 @@ dymd keys add KEY_NAME_HERE
 3. Add your account to the local genesis file with the given amount and the key you just created. Use only `10000000000udym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account KEY_NAME_HERE 10000000000udym
+dymd add-genesis-account ADDRESS_HERE 10000000000udym
 ```
 
-4. Create the gentx, use only `9000000000udym`:
+4. Create the gentx. If you would like to override the memo field use the --ip and --node-id flags for the dymd gentx command above. Use only `9000000000udym`:
 
 ```bash
-dymd gentx KEY_NAME_HERE 9000000000udym \
---chain-id="dym-test-1" \
---moniker=dym_dog \
---website="https://dymension.xyz" \
---details="Welcome to a new Dymension!" \
---commission-rate="0.1" \
---commission-max-rate="0.20" \
---commission-max-change-rate="0.01" \
---min-self-delegation="1" \
---identity="5B5AB9D8FBBCEDC6" \
---pubkey="dymvalconspub1zcjduepqnxl4ntf8wjn0275smfll4n4lg9cwcurz2qt6dkhrjzf94up8g4cspyyzn9"
+dymd gentx \
+  --amount 9000000000udym \
+  --commission-rate <commission_rate> \
+  --commission-max-rate <commission_max_rate> \
+  --commission-max-change-rate <commission_max_change_rate> \
+  --pubkey <consensus_pubkey> \
+  --name <key_name>
 ```
 
 If all goes well, you will see a message similar to the following:
