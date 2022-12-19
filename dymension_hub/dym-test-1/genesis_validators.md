@@ -106,7 +106,7 @@ dymd gentx \
   --commission-max-rate <commission_max_rate> \
   --commission-max-change-rate <commission_max_change_rate> \
   --pubkey <consensus_pubkey> \
-  --name <key_name>
+  --name <KEY_NAME_HERE>
 ```
 
 If all goes well, you will see a message similar to the following:
