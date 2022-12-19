@@ -1,4 +1,4 @@
-![Dymension Hub Genesis Validators](/static/img/background-color-logo.jpg)
+![Dymension Hub Genesis Validators](/static/img/genesis-validators.png)
 
 # Welcome Genesis Validators!
 
@@ -119,7 +119,7 @@ If all goes well, you will see a message similar to the following:
 Genesis transaction written to "/home/user/.dymension/config/gentx/gentx-******.json"
 ```
 
-#### Submit genesis transaction
+#### Submit genesis transaction:
 
 1. Rename the gentx file just generated to gentx-{your-moniker}.json (please do not have any spaces or special characters in the file name)
 
