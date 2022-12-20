@@ -46,9 +46,8 @@ source $HOME/.profile
 #### Install Dymension Hub:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git
+git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
 cd dymension
-# TODO git checkout
 make build && make install
 ```
 
@@ -63,8 +62,8 @@ Returns:
 ```
 name: dymension
 server_name: dymd
-version: TODO
-commit: TODO
+version: v0.1.0-alpha
+commit: f68b1000f040ace7c266b6c4b5e7c4a8b9a31378
 ...
 cosmos_sdk_version: TODO
 ```
@@ -82,31 +81,25 @@ dymd config chain-id dym-test-1
 1. Initialize the Dymension directories and create the local genesis file with the correct chain-id. You will be asked to replace the temporary genesis file with the genesis.json file later.
 
 ```bash
-dymd init NODE_NAME_HERE
+dymd init <NODE_NAME> --chain-id=dym-test-1
 ```
 
 2. Create a key pair:
 
 ```bash
-dymd keys add KEY_NAME_HERE
+dymd keys add <KEY_NAME>
 ```
 
 3. Add your account to the local genesis file with the given amount and the key you just created. Use only `10000000000udym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account ADDRESS_HERE 10000000000udym
+dymd add-genesis-account <ADDRESS> 10000000000udym
 ```
 
 4. Create the gentx. If you would like to override the memo field use the --ip and --node-id flags for the dymd gentx command above. Use only `9000000000udym`:
 
 ```bash
-dymd gentx \
-  --amount 9000000000udym \
-  --commission-rate <commission_rate> \
-  --commission-max-rate <commission_max_rate> \
-  --commission-max-change-rate <commission_max_change_rate> \
-  --pubkey <consensus_pubkey> \
-  --name <key_name>
+dymd gentx <KEY_NAME> 9000000000udym --chain-id dym-test-1
 ```
 
 If all goes well, you will see a message similar to the following:
@@ -144,4 +137,6 @@ git push origin main
 
 6. Create a PR onto https://github.com/dymensionXYZ/testnets
 
-Only PRs from selected validators will be accepted. Validators must submit their PRs prior to the deadline submission date (TODO). The Dymension core team will provide Part 2 instructions of replacing the genesis.json and starting the network. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
+For a demonstration of a step-by-step guide to creating a PR please follow the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) or watch this helpful [youtube video](https://www.youtube.com/watch?v=a_FLqX3vGR4).
+
+Only PRs from selected validators will be accepted. Validators must submit their PRs prior to the deadline submission date. The Dymension core team will provide Part 2 instructions of replacing the genesis.json and starting the network. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
