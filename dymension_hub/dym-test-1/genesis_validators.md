@@ -28,9 +28,17 @@ Genesis file: TBA
 
 These instructions are for creating a basic setup of a single node. Validators should modify these instructions for their own custom setups as needed (i.e. sentry nodes, tmkms, etc).
 
-**Prerequisites:** Make sure to have [Golang >=1.18](https://golang.org/).
+**Prerequisites:** Make sure to have [Golang >=1.18](https://golang.org/). You need to ensure your GOPATH configuration is correct.
 
-You need to ensure your GOPATH configuration is correct. If the following **'make'** step does not work then you might have to add these lines to your .profile or .zshrc in the users home folder:
+#### Install Dymension Hub:
+
+```sh
+git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
+cd dymension
+make install
+```
+
+If the **'make'** step did not work then you might have to add these lines to your .profile or .zshrc in the users home folder:
 
 #### Update environment variables to include Go:
 
@@ -43,15 +51,7 @@ EOF
 source $HOME/.profile
 ```
 
-#### Install Dymension Hub:
-
-```sh
-git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
-cd dymension
-make build && make install
-```
-
-This will build and install `dymd` binary into `$GOBIN`. Check that you have the right Dymension version installed:
+This will install `dymd` binary into `$GOBIN`. Check that you have the right Dymension version installed:
 
 ```
 dymd version --long
@@ -78,7 +78,7 @@ dymd config chain-id dym-test-1
 
 #### Generate genesis transaction (gentx)
 
-1. Initialize the Dymension directories and create the local genesis file with the correct chain-id. You will be asked to replace the temporary genesis file with the genesis.json file later.
+1. Initialize the Dymension directories and create a local genesis file with the correct chain-id. You will be asked to replace the temporary Genesis file with the Genesis file once all participating validators submit their Gentx.
 
 ```bash
 dymd init <NODE_NAME> --chain-id=dym-test-1
@@ -96,10 +96,10 @@ dymd keys add <KEY_NAME>
 dymd add-genesis-account <ADDRESS> 10000000000udym
 ```
 
-4. Create the gentx. If you would like to override the memo field use the --ip and --node-id flags for the dymd gentx command above. Use only `9000000000udym`:
+4.  4. Create the gentx. The memo field indicates the NODE_ID@{IP_ADDRESS}:{PORT}. The IP address defaults to 192.168.1.99, which is a Private IP address. To override the memo field use the --ip and --node-id flags for the dymd gentx command. Use only `9000000000udym`:
 
 ```bash
-dymd gentx <KEY_NAME> 9000000000udym --chain-id dym-test-1
+dymd gentx <KEY_NAME> --ip <ROUTABLE_IP_ADDRESS> --chain-id dym-test-1 9000000000udym
 ```
 
 If all goes well, you will see a message similar to the following:
