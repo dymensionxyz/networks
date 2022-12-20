@@ -82,6 +82,7 @@ dymd config chain-id dym-test-1
 
 ```bash
 dymd init <NODE_NAME> --chain-id=dym-test-1 # e.g. Replace <NODE_NAME> with Validator-Name-Node
+dymd init <NODE_NAME> --chain-id=dym-test-1 # e.g. Replace <NODE_NAME> with Validator-Name-Node
 ```
 
 2. Create a key pair:
@@ -97,6 +98,7 @@ dymd add-genesis-account <ADDRESS> 10000000000udym
 ```
 
 4. Create the gentx. The memo field indicates the NODE_ID@{IP_ADDRESS}:{PORT}. The IP address defaults to 192.168.1.99, which is a Private IP address. To override the memo field use the --ip and --node-id flags for the dymd gentx command. Use only `9000000000udym`:
+5. Create the gentx. The memo field indicates the NODE_ID@{IP_ADDRESS}:{PORT}. The IP address defaults to 192.168.1.99, which is a Private IP address. To override the memo field use the --ip and --node-id flags for the dymd gentx command. Use only `9000000000udym`:
 
 ```bash
 dymd gentx <KEY_NAME> --ip <ROUTABLE_IP_ADDRESS> --chain-id dym-test-1 9000000000udym
@@ -108,7 +110,7 @@ If all goes well, you will see a message similar to the following:
 Genesis transaction written to "/home/user/.dymension/config/gentx/gentx-******.json"
 ```
 
-### Submitting the Genesis transaction:
+#### Submitting the Genesis transaction:
 
 1. Rename the gentx file just generated to gentx-{your-moniker}.json (please do not have any spaces or special characters in the file name).
 
@@ -141,6 +143,6 @@ For a demonstration of a step-by-step guide to creating a PR please follow the [
 
 Only PRs from selected validators will be accepted. Validators must submit their PRs prior to the deadline submission date. Make sure to inform the Dymension team in the #genesis-validator Discord channel when you submit the PR and your moniker name.
 
-The Dymension core team will provide Part 2 instructions of replacing the genesis.json and starting the network in the coming days. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
+The Dymension core team will provide Part 2 instructions of replacing the genesis.json and starting the network. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
 
 ### Welcome aboard!
