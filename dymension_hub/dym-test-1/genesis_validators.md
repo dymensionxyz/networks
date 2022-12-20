@@ -30,7 +30,7 @@ These instructions are for creating a basic setup of a single node. Validators s
 
 **Prerequisites:** Make sure to have [Golang >=1.18](https://golang.org/). You need to ensure your GOPATH configuration is correct.
 
-### Install Dymension Hub:
+#### Install Dymension Hub:
 
 ```sh
 git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
