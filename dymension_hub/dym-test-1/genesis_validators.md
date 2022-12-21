@@ -30,7 +30,7 @@ These instructions are for creating a basic setup of a single node. Validators s
 
 **Prerequisites:** Make sure to have [Golang >=1.18](https://golang.org/). You need to ensure your GOPATH configuration is correct.
 
-#### Install Dymension Hub:
+### Install Dymension Hub:
 
 ```sh
 git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
@@ -110,7 +110,7 @@ If all goes well, you will see a message similar to the following:
 Genesis transaction written to "/home/user/.dymension/config/gentx/gentx-******.json"
 ```
 
-#### Submitting the Genesis transaction:
+### Submitting the Genesis transaction:
 
 1. Rename the gentx file just generated to gentx-{your-moniker}.json (please do not have any spaces or special characters in the file name).
 
@@ -143,6 +143,6 @@ For a demonstration of a step-by-step guide to creating a PR please follow the [
 
 Only PRs from selected validators will be accepted. Validators must submit their PRs prior to the deadline submission date. Make sure to inform the Dymension team in the #genesis-validator Discord channel when you submit the PR and your moniker name.
 
-The Dymension core team will provide Part 2 instructions of replacing the genesis.json and starting the network. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
+The Dymension core team will provide Part 2 instructions of replacing the genesis.json and starting the network in the coming days. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
 
 ### Welcome aboard!
