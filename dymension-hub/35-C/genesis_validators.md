@@ -2,12 +2,16 @@
 
 # Welcome Genesis Validators!
 
-The primary point of communication for the genesis process will be the #genesis-validators channel on the [Dymension Discord](discord.gg/dymension). It is absolutely critical that you and your team join the Discord during launch, as it will be the coordination point in case of any hiccups or issues during the launch process. The channel is private by default in order to keep it free of spam and unnecessary noise.
+The primary point of communication for the genesis process will be the #genesis-validators-35-c channel on the [Dymension Discord](discord.gg/dymension). It is absolutely critical that you and your team join the Discord during launch, as it will be the coordination point in case of any hiccups or issues during the launch process. The channel is private by default in order to keep it free of spam and unnecessary noise.
 
-The genesis event is broken into two parts:
+#### The deadline for submitting a Gentx PR is February 8 at 12:00 UTC
+
+#### The genesis event is broken into two parts:
 
 -   [Part 1](/dymension-hub/35-C/genesis_validators.md#part-1): Preparing gentx
 -   [Part 2](/dymension-hub/35-C/genesis_validators.md#part-2): Starting the testnet
+
+After Gentxs are collected we will provide a pre-genesis.json file for review. As long as there are no recommended changes we will provide the Genesis file with the genesis time in Part 2 after the collection of Gentxs.
 
 **Recommended minimum hardware requirements:**
 
@@ -25,7 +29,7 @@ These instructions are for creating a basic setup of a single node. Validators s
 ### Install Dymension Hub:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git --branch v1.0.0 (TODO -- DOUBLE CHECK THE VERSION)
+git clone https://github.com/dymensionxyz/dymension.git --branch v0.2.0-beta
 cd dymension
 make install
 ```
@@ -41,8 +45,8 @@ Returns:
 ```
 name: dymension
 server_name: dymd
-version: (TODO -- DOUBLE CHECK THE VERSION)
-commit: (TODO -- DOUBLE CHECK THE COMMIT)
+version: v0.2.0-beta
+commit: 987e33407911c0578251f3ace95d2382be7e661d
 ```
 
 We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
@@ -67,16 +71,16 @@ dymd init <NODE_NAME> --chain-id=35-C
 dymd keys add <KEY_NAME>
 ```
 
-3. Add your account to the genesis file with the given amount and the key you just created. Use only `10000000000udym`, other amounts will be ignored.
+3. Add your account to the genesis file with the given amount and the key you just created. Use only `600000000000udym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account <ADDRESS> 10000000000udym
+dymd add-genesis-account <ADDRESS> 600000000000udym
 ```
 
-4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym, everything else is recommended but optional. Use only `9000000000udym`:
+4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym, everything else is recommended but optional. Use only `500000000000udym`:
 
 ```bash
-dymd gentx <KEY_NAME> --chain-id 35-C 9000000000udym
+dymd gentx <KEY_NAME> --chain-id 35-C 500000000000udym
 ```
 
 If all goes well, you will see a message similar to the following:
@@ -116,8 +120,8 @@ git push origin main
 
 For a demonstration of a step-by-step guide to creating a PR please follow the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) or watch this helpful [youtube video](https://www.youtube.com/watch?v=a_FLqX3vGR4).
 
-Only PRs from selected validators will be accepted. Validators must submit their PRs prior to the deadline submission date. Make sure to inform the Dymension team in the #genesis-validator Discord channel when you submit the PR along with your moniker name.
+Please DM Ganeshti#1471 on Dymension's discord with a link of the GitHub PR. Only PRs from selected validators will be accepted. Validators must submit their PRs prior to the deadline submission date.
 
-The Dymension core team will provide Part 2 instructions of replacing the genesis.json and starting the network in the coming days. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
+The Dymension core team will provide Part 2 instructions for replacing the genesis.json after collecting Gentxs. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
 
 ### Welcome aboard!
