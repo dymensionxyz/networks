@@ -151,7 +151,7 @@ sha256sum ~/.dymension/config/genesis.json
 dymd validate-genesis
 ```
 
-Add seed nodes in config.toml. Which can be found in the seeds.txt file.
+Add seed nodes in config.toml. We will be adding peer and seed nodes prior to the launch of the Genesis event. These nodes can be found in the seeds.txt file.
 
 ```sh
 vi $HOME/.dymension/config/config.toml
