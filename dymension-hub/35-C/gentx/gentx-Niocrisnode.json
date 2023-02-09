@@ -4,7 +4,7 @@
             {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                    "moniker": "Stakin",
+                    "moniker": "Niocrisnode",
                     "identity": "",
                     "website": "",
                     "security_contact": "",
@@ -16,16 +16,19 @@
                     "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "dym1333a3mla9vxyyxpa5acpaqnm57rw7q0lgda6m5",
-                "validator_address": "dymvaloper1333a3mla9vxyyxpa5acpaqnm57rw7q0ltxpc9w",
+                "delegator_address": "dym1fat4v96hrefz0qhxtp6zntgeznelz4449k4jzk",
+                "validator_address": "dymvaloper1fat4v96hrefz0qhxtp6zntgeznelz444xafsuv",
                 "pubkey": {
                     "@type": "/cosmos.crypto.ed25519.PubKey",
-                    "key": "t0HTzTKGu/bLqStuGm3obMKCXcWhWzrMrDqfreEGcro="
+                    "key": "ZXUMhIZ8yAL/1Rvp1qOBUI6vR2F6J0zYqgrlh/DaOGQ="
                 },
-                "value": { "denom": "udym", "amount": "500000000000" }
+                "value": {
+                    "denom": "udym",
+                    "amount": "500000000000"
+                }
             }
         ],
-        "memo": "02f4ff75107275d41855e3c87b5e3bb5cff8b7a9@65.109.60.43:26656",
+        "memo": "b8d08951d68da03af8f9272bf77684811197c289@95.216.41.160:26656",
         "timeout_height": "0",
         "extension_options": [],
         "non_critical_extension_options": []
@@ -35,9 +38,13 @@
             {
                 "public_key": {
                     "@type": "/cosmos.crypto.secp256k1.PubKey",
-                    "key": "A61RKSGlZLmGutJa3GCWfHNAdx0pTc1wCbbXXDqvHJCl"
+                    "key": "AmLmkhLkVZF6odpaPJMts7k0MHBjYTcRpLwZSF9FmYnM"
                 },
-                "mode_info": { "single": { "mode": "SIGN_MODE_DIRECT" } },
+                "mode_info": {
+                    "single": {
+                        "mode": "SIGN_MODE_DIRECT"
+                    }
+                },
                 "sequence": "0"
             }
         ],
@@ -49,6 +56,6 @@
         }
     },
     "signatures": [
-        "RtDcWbwsRiiPHAO1foZMZd0NgT64M+vONCp+CtHDsXRzIqbzyrgXdP1vFu9yHKA0QPNMXxk2mZgUxWphnI+udQ=="
+        "T2xbM7B+0isubUK/1o5K+9HHwsdFZTK4ufVhgWRC5L4RPCbLGsWPFRQUF68/81l/2feGvAcZSwVKt1OXmsJGkw=="
     ]
 }
