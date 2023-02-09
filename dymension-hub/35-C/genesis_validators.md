@@ -125,3 +125,54 @@ Please DM Ganeshti#1471 on Dymension's discord with a link of the GitHub PR. Onl
 The Dymension core team will provide Part 2 instructions for replacing the genesis.json after collecting Gentxs. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
 
 ### Welcome aboard!
+
+# Part 2
+
+Welcome to Part 2 of the Genesis Event of the Dymension Hub's testnet. We recommend reviewing `What is a Genesis File?` [here](https://github.com/cosmos/gaia/blob/main/docs/resources/genesis.md). Below you will find the source of the genesis file which includes validator gentx provided in Part 1. Follow these instructions to download the genesis file, validate, and prepare for launching the testnet!
+
+NOTE: The provided file is a `pre-genesis` file. As long as there are no changes until Monday, February 13th. Dymension's core team will submit a PR for the official Genesis file. Please review the Pre-genesis file provided and reach out to the team via Discord to voice any concerns. Once the genesis file PR is submitted by the Dymension core team you may follow the instructions to prepare for launch:
+
+**Genesis File**
+
+```sh
+cp genesis.json ~/.dymension/config/genesis.json
+```
+
+**Genesis sha256**
+
+```bash
+sha256sum ~/.dymension/config/genesis.json
+99d9e633fa6d1609bbbeaed2b4f80a8fad69842d845fa10884e6a7806db95b11 ~/.dymension/config/genesis.json
+```
+
+**Validate the Genesis file**
+
+```bash
+dymd validate-genesis
+```
+
+Add seed nodes in config.toml. Which can be found in the seeds.txt file.
+
+```sh
+vi $HOME/.dymension/config/config.toml
+```
+
+#### Set validator gas fees
+
+You can set the minimum gas prices for transactions to be accepted into your node's mempool. This sets a lower bound on gas prices, preventing spam. Dymension can accept gas in _any_ currency. To accept both DYM and ATOM for example, set `minimum-gas-prices` in `app.toml`.
+
+```sh
+vi $HOME/.dymension/config/app.toml
+```
+
+```sh
+minimum-gas-prices = "0.025udym,0.025uatom"
+```
+
+#### Genesis time is: 2023-02-15 14:00 UTC
+
+```bash
+dymd start
+```
+
+Once 2/3rd of staked tokens are online after genesis time the blockchain has begun!
