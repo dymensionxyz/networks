@@ -1691,19 +1691,21 @@
       "supply": [],
       "denom_metadata": [
         {
-          "base": "udym",
           "denom_units": [
             {
               "denom": "udym",
               "exponent": 0
             },
             {
-              "denom": "dym",
+              "denom": "DYM",
               "exponent": 6
             }
           ],
-          "description": "Dym",
-          "display": "dym"
+          "description": "The native staking token of the Dymension Hub",
+          "display": "DYM",
+          "name": "DYM",
+          "base": "udym",
+          "symbol": "DYM"
         }
       ]
     },
