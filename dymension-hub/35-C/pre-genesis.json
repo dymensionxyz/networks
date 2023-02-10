@@ -1,6 +1,6 @@
 {
   "genesis_time": "2023-02-15T14:00:00Z",
-  "chain_id": "35-c",
+  "chain_id": "35-C",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -1689,7 +1689,23 @@
         }
       ],
       "supply": [],
-      "denom_metadata": []
+      "denom_metadata": [
+        {
+          "base": "udym",
+          "denom_units": [
+            {
+              "denom": "udym",
+              "exponent": 0
+            },
+            {
+              "denom": "dym",
+              "exponent": 6
+            }
+          ],
+          "description": "Dym",
+          "display": "dym"
+        }
+      ]
     },
     "capability": {
       "index": "1",
@@ -1704,8 +1720,8 @@
     "distribution": {
       "params": {
         "community_tax": "0.020000000000000000",
-        "base_proposer_reward": "0.010000000000000000",
-        "bonus_proposer_reward": "0.040000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
         "withdraw_addr_enabled": true
       },
       "fee_pool": {
@@ -2702,67 +2718,6 @@
           },
           "signatures": [
             "e1XTrHsaHOsDaJP/U6ZQk93nVvql7FbkuwTj0Z+jjjJiazsmfPN44RQ5e6iBTnLPGGHKCT/Q2hQ6kR0+gicBug=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "✅ CryptoCrew Validators #IBCgang",
-                  "identity": "9AE70F9E3EDA8956",
-                  "website": "https://ccvalidators.com",
-                  "security_contact": "support@ccvalidators.com",
-                  "details": "CryptoCrew validator \u0026 multi-chain IBC-relayer service for DYMENSION. Based in Europe. t.me/cryptocrew_validators"
-                },
-                "commission": {
-                  "rate": "0.050000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "dym1dzd0ma9mdxxvv4q2c55a25swkwxjqlz9u500np",
-                "validator_address": "dymvaloper1dzd0ma9mdxxvv4q2c55a25swkwxjqlz9llnddm",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "QLufk1HsCYGl89feRTy7Du0PP6gzG3Y+mY/B5aQOkO8="
-                },
-                "value": {
-                  "denom": "udym",
-                  "amount": "500000000000"
-                }
-              }
-            ],
-            "memo": "97bbaac60fb56f813e99752640204f9a40a71674@192.168.0.69:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AgeRSeK84rohCh3SCibTb/IoutivJpkedWqsQhLIFs1e"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "zp47LZmPY+WUdldYcdARucfZYBd8TwUs9/8cwOzKrAgFisif/VzpYQ9gJoUEM/xLBa0v99kKAHichQyKd15TKA=="
           ]
         },
         {
@@ -4410,67 +4365,6 @@
           },
           "signatures": [
             "3MyoP/1GAQpeEDFkAlPFd6Rl8J/D5redBlsbhST/wPQgv+p6+uF9lCxiei8sa2rheszt+7rM8K2YyRNCCcfTaA=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "Niocrisnode",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "dym1fat4v96hrefz0qhxtp6zntgeznelz4449k4jzk",
-                "validator_address": "dymvaloper1fat4v96hrefz0qhxtp6zntgeznelz444xafsuv",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "ZXUMhIZ8yAL/1Rvp1qOBUI6vR2F6J0zYqgrlh/DaOGQ="
-                },
-                "value": {
-                  "denom": "udym",
-                  "amount": "500000000000"
-                }
-              }
-            ],
-            "memo": "b8d08951d68da03af8f9272bf77684811197c289@95.216.41.160:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AmLmkhLkVZF6odpaPJMts7k0MHBjYTcRpLwZSF9FmYnM"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "T2xbM7B+0isubUK/1o5K+9HHwsdFZTK4ufVhgWRC5L4RPCbLGsWPFRQUF68/81l/2feGvAcZSwVKt1OXmsJGkw=="
           ]
         },
         {
@@ -6858,67 +6752,6 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "RockawayX Infra",
-                  "identity": "",
-                  "website": "https://www.rockawayx.com/infra",
-                  "security_contact": "infra@rockawayx.com",
-                  "details": "RockawayX Infra is an enterprise bare-metal operator for Cosmos Chains"
-                },
-                "commission": {
-                  "rate": "0.080000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "dym1mjhyvrhn6vc98ayzk9d6el5f6xkq0gvgvfm32p",
-                "validator_address": "dymvaloper1mjhyvrhn6vc98ayzk9d6el5f6xkq0gvg0z8n5m",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "mvsqJMyOMospTF3SUbkKYCSOXf7lp+WBG6iFP8Kqe5A="
-                },
-                "value": {
-                  "denom": "udym",
-                  "amount": "500000000000"
-                }
-              }
-            ],
-            "memo": "1f9bca661f7f9e2048f78107409e70d9ff4616f0@10.137.215.100:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Ao2k3zRzcMLQkPn1AAns5+A0D1dj/w3p/rt1MVHjA/H2"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "e4iIzuTak59OfNatdzhCw1v8eO8aI7DKEfxgxH//GQ8keL6uj9fS9CIdFxpYFG+l74AzeZU9WKBKnvzlPUwksw=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
                   "moniker": "seltonstake",
                   "identity": "",
                   "website": "",
@@ -7717,7 +7550,7 @@
         "min_deposit": [
           {
             "denom": "udym",
-            "amount": "10000000"
+            "amount": "1000000000"
           }
         ],
         "max_deposit_period": "172800s"
@@ -7833,11 +7666,11 @@
     },
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
+        "signed_blocks_window": "30000",
         "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600s",
+        "downtime_jail_duration": "60s",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
+        "slash_fraction_downtime": "0.000000000000000000"
       },
       "signing_infos": [],
       "missed_blocks": []
