@@ -130,8 +130,6 @@ The Dymension core team will provide Part 2 instructions for replacing the genes
 
 Welcome to Part 2 of the Genesis Event of the Dymension Hub's testnet. We recommend reviewing `What is a Genesis File?` [here](https://github.com/cosmos/gaia/blob/main/docs/resources/genesis.md). Below you will find the source of the genesis file which includes validator gentx provided in Part 1. Follow these instructions to download the genesis file, validate, and prepare for launching the testnet!
 
-NOTE: The provided file is a `pre-genesis` file. As long as there are no changes until Monday, February 13th. Dymension's core team will submit a PR for the official Genesis file. Please review the Pre-genesis file provided and reach out to the team via Discord to voice any concerns. Once the genesis file PR is submitted by the Dymension core team you may follow the instructions to prepare for launch:
-
 **Genesis File**
 
 ```sh
@@ -151,7 +149,7 @@ cf20e3b15d089ceeaaa9bb2abcd48a50f98e9f2274f4320aeae534d6972c4ee2 ~/.dymension/co
 dymd validate-genesis
 ```
 
-Add seed nodes in config.toml. We will be adding peer and seed nodes prior to the launch of the Genesis event. These nodes can be found in the seeds.txt file.
+Add seed nodes in config.toml. These nodes can be found in the seeds.txt file.
 
 ```sh
 vi $HOME/.dymension/config/config.toml
