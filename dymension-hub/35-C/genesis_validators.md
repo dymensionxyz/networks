@@ -1,4 +1,4 @@
-![Dymension Hub Genesis Validators](/static/img/genesis-validators.png)
+![Dymension Hub Genesis Validators](/static/img/background-color-logo.jpg)
 
 # Welcome Genesis Validators!
 
