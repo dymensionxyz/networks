@@ -15,7 +15,10 @@ After Gentxs are collected we will provide a pre-genesis.json file for review. A
 
 **Recommended minimum hardware requirements:**
 
--   TODO
+-   4 or more physical CPU cores
+-   At least 500GB of SSD disk storage
+-   At least 16GB of memory
+-   At least 100mbps network bandwidth
 
 # Part 1
 
