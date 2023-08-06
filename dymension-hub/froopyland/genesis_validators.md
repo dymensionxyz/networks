@@ -54,7 +54,7 @@ We recommend saving the testnet chain-id into your Dymension client.toml. This w
 ### Save the testnet chain-id:
 
 ```
-dymd config chain-id froopyland_9000-1
+dymd config chain-id froopyland_100-1
 ```
 
 ### Generate genesis transaction (gentx):
@@ -62,7 +62,7 @@ dymd config chain-id froopyland_9000-1
 1. Initialize the Dymension directories and create a local genesis file with the correct chain-id. You will be asked to replace the temporary Genesis file with the finalized Genesis file once all participating validators submit their Gentx.
 
 ```bash
-dymd init <NODE_NAME> --chain-id=froopyland_9000-1
+dymd init <NODE_NAME> --chain-id=froopyland_100-1
 ```
 
 2. Create a key pair:
@@ -71,16 +71,16 @@ dymd init <NODE_NAME> --chain-id=froopyland_9000-1
 dymd keys add <KEY_NAME>
 ```
 
-3. Add your account to the genesis file with the given amount and the key you just created. Use only `600000000000udym`, other amounts will be ignored.
+3. Add your account to the genesis file with the given amount and the key you just created. Use only `1000000udym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account <ADDRESS> 600000000000udym
+dymd add-genesis-account <ADDRESS> 1000000udym
 ```
 
-4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym, everything else is recommended but optional. Use only `500000000000udym`:
+4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `1000000udym`:
 
 ```bash
-dymd gentx <KEY_NAME> --chain-id froopyland_9000-1 500000000000udym
+dymd gentx <KEY_NAME> --chain-id froopyland_100-1 1000000udym
 ```
 
 If all goes well, you will see a message similar to the following:
