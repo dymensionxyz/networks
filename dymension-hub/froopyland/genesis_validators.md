@@ -55,6 +55,7 @@ We recommend saving the testnet chain-id into your Dymension client.toml. This w
 
 ```
 dymd config chain-id froopyland_100-1
+dymd config chain-id froopyland_100-1
 ```
 
 ### Generate genesis transaction (gentx):
