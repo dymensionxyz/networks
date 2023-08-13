@@ -86,7 +86,7 @@ dymd gentx <KEY_NAME> 5000000000000000000udym \
 --identity= \
 --website="" \
 --details="" \
---security-contact="hello@nodeist.net" \
+--security-contact="" \
 --commission-rate=0.05 \
 --commission-max-rate=0.1 \
 --commission-max-change-rate=0.01 \
