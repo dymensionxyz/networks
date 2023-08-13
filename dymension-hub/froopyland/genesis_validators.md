@@ -74,14 +74,23 @@ dymd keys add <KEY_NAME>
 3. Add your account to the genesis file with the given amount and the key you just created. Use only `6000000000000000000udym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account <ADDRESS> 6000000000000000000udym
+dymd add-genesis-account <KEY_NAME> 6000000000000000000udym
 ```
 
 4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `5000000000000000000udym`:
 
 ```bash
-dymd gentx <KEY_NAME> --chain-id froopyland_100-1 5000000000000000000udym
-```
+dymd gentx <KEY_NAME> 5000000000000000000udym \
+--chain-id=froopyland_100-1 \
+--moniker="" \
+--identity= \
+--website="" \
+--details="" \
+--security-contact="hello@nodeist.net" \
+--commission-rate=0.05 \
+--commission-max-rate=0.1 \
+--commission-max-change-rate=0.01 \
+--pubkey $(dymd tendermint show-validator)```
 
 If all goes well, you will see a message similar to the following:
 
