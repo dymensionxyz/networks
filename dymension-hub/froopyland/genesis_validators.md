@@ -2,31 +2,34 @@
 
 # Welcome Genesis Validators!
 
-The primary point of communication for the genesis process will be the #genesis-froopyland channel on the [Dymension Discord](https://discord.gg/dymension). It is absolutely critical that you and your team join the Discord during launch, as it will be the coordination point in case of any hiccups or issues during the launch process. The channel is private by default in order to keep it free of spam and unnecessary noise.
+The primary point of communication for the genesis process will be the #genesis-froopyland channel on the [Dymension Discord](https://discord.gg/dymension). Selected validators may participate in the genesis event of the Froopyland network. It is absolutely critical that you and your team join the Discord during launch, as it will be the coordination point in case of any hiccups or issues during the launch process. The channel is private by default in order to keep it free of spam and unnecessary noise.
 
-#### The deadline for submitting a Gentx PR is TODO
+#### The deadline for submitting a Gentx PR is August 18 at 12:00 UTC
 
 #### The genesis event is broken into two parts:
 
 -   [Part 1](/dymension-hub/froopyland/genesis_validators.md#part-1): Preparing gentx
--   [Part 2](/dymension-hub/froopyland/genesis_validators.md#part-2): Starting the testnet
+-   Part 2: Starting the testnet (Soon after)
 
 After Gentxs are collected we will provide a pre-genesis.json file for review. As long as there are no recommended changes we will provide the Genesis file with the genesis time in Part 2 after the collection of Gentxs.
 
 **Recommended minimum hardware requirements:**
 
--   TODO
+-   4 or more physical CPU cores
+-   At least 200GB of SSD disk storage
+-   At least 8GB of memory
+-   At least 100mbps network bandwidth
 
 # Part 1
 
 These instructions are for creating a basic setup of a single node. Validators should modify these instructions for their own custom setups as needed (i.e. sentry nodes, tmkms, etc).
 
-**Prerequisites:** Make sure to have [Golang >=1.19](https://golang.org/). You need to ensure your GOPATH configuration is correct.
+**Prerequisites:** Make sure to have [Golang >=1.18](https://golang.org/). You need to ensure your GOPATH configuration is correct.
 
 ### Install Dymension Hub:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git --branch TODO
+git clone https://github.com/dymensionxyz/dymension.git --branch v1.0.0-beta
 cd dymension
 make install
 ```
@@ -42,8 +45,8 @@ Returns:
 ```
 name: dymension
 server_name: dymd
-version: TODO
-commit: TODO
+version: v1.0.0-beta
+commit: a68c3347e2251ecc234d75913b4fa8c16bac19b6
 ```
 
 We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
@@ -51,7 +54,7 @@ We recommend saving the testnet chain-id into your Dymension client.toml. This w
 ### Save the testnet chain-id:
 
 ```
-dymd config chain-id froopyland-1
+dymd config chain-id froopyland_100-1
 ```
 
 ### Generate genesis transaction (gentx):
@@ -59,7 +62,7 @@ dymd config chain-id froopyland-1
 1. Initialize the Dymension directories and create a local genesis file with the correct chain-id. You will be asked to replace the temporary Genesis file with the finalized Genesis file once all participating validators submit their Gentx.
 
 ```bash
-dymd init <NODE_NAME> --chain-id=froopyland-1
+dymd init <NODE_NAME> --chain-id=froopyland_100-1
 ```
 
 2. Create a key pair:
@@ -68,16 +71,16 @@ dymd init <NODE_NAME> --chain-id=froopyland-1
 dymd keys add <KEY_NAME>
 ```
 
-3. Add your account to the genesis file with the given amount and the key you just created. Use only `600000000000udym`, other amounts will be ignored.
+3. Add your account to the genesis file with the given amount and the key you just created. Use only `6000000000000000000udym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account <ADDRESS> 600000000000udym
+dymd add-genesis-account <ADDRESS> 6000000000000000000udym
 ```
 
-4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym, everything else is recommended but optional. Use only `500000000000udym`:
+4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `5000000000000000000udym`:
 
 ```bash
-dymd gentx <KEY_NAME> --chain-id froopyland-1 500000000000udym
+dymd gentx <KEY_NAME> --chain-id froopyland_100-1 5000000000000000000udym
 ```
 
 If all goes well, you will see a message similar to the following:
