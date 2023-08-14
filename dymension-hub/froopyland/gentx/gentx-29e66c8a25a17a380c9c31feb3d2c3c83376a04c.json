@@ -24,7 +24,7 @@
         },
         "value": {
           "denom": "udym",
-          "amount": "5000000000000000000"
+          "amount": "100000000000000000000000"
         }
       }
     ],
@@ -57,6 +57,6 @@
     "tip": null
   },
   "signatures": [
-    "w+PcL53VxJ8AHICyKRKDMBJiN8n0DCIPiKqx9Zc/QY84lPeserS6bGur/RYRJPup7bzqvNq/CV1crAGPrrMX/gA="
+    "tgwpP7Zly9j2HYICrbAy6tnRf3SHRHsZdbYX5cXv62Z6Sih7FAvomYCvfFxZ/fmITghK6yazC9p+4zAIVAVSWAE="
   ]
 }
