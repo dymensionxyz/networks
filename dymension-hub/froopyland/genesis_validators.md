@@ -29,7 +29,7 @@ These instructions are for creating a basic setup of a single node. Validators s
 ### Install Dymension Hub:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git --branch v1.0.0-beta
+git clone https://github.com/dymensionxyz/dymension.git --branch v1.0.1-beta
 cd dymension
 make install
 ```
@@ -45,8 +45,8 @@ Returns:
 ```
 name: dymension
 server_name: dymd
-version: v1.0.0-beta
-commit: a68c3347e2251ecc234d75913b4fa8c16bac19b6
+version: v1.0.1-beta
+commit: 61e7d3655910c7c55c149f95ec0ced3a476bd2c7
 ```
 
 We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
@@ -71,16 +71,16 @@ dymd init <NODE_NAME> --chain-id=froopyland_100-1
 dymd keys add <KEY_NAME>
 ```
 
-3. Add your account to the genesis file with the given amount and the key you just created. Use only `6000000000000000000udym`, other amounts will be ignored.
+3. Add your account to the genesis file with the given amount and the key you just created. Use only `100000000000000000000000udym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account <ADDRESS> 6000000000000000000udym
+dymd add-genesis-account <ADDRESS> 100000000000000000000000udym
 ```
 
-4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `5000000000000000000udym`:
+4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `100000000000000000000000udym`:
 
 ```bash
-dymd gentx <KEY_NAME> --chain-id froopyland_100-1 5000000000000000000udym
+dymd gentx <KEY_NAME> --chain-id=froopyland_100-1 100000000000000000000000udym
 ```
 
 If all goes well, you will see a message similar to the following:
