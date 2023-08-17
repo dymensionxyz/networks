@@ -1,4 +1,5 @@
 [
+  
   {
     "chainId": "devnet_304-1",
     "chainName": "Dymension Devnet",
@@ -120,5 +121,36 @@
     "nativeCurrency": "uPEPE",
     "stakeCurrency": "uPEPE",
     "bech32Prefix": "ethm"
-  }
+  },
+
+ {
+      "da": "Celestia",
+      "chainName": "PEPE Test",
+      "rpc": "https://rpc-pepe-devnet.dymension.xyz",
+      "rest": "https://rest-pepe-devnet.dymension.xyz",
+      "evm": {
+         "chainId": "0x4d2",
+         "rpc": "https://evmrpc-pepe-devnet.dymension.xyz"
+      },
+      "description": "pepepepepepepe",
+      "type": "RollApp",
+      "custom": true,
+      "coinType": 60,
+      "ibc": {
+         "timeout": 172800000,
+         "channel": "channel-0",
+         "hubChannel": "channel-820"
+      },
+      "logo": "/static/media/custom-rollapp-logo.30d25b67f060d0db82e225c3964368dc.svg",
+      "chainId": "pepe_1234-1",
+      "currencies": [
+         "uPEPE"
+      ],
+      "feeCurrency": "uPEPE",
+      "nativeCurrency": "uPEPE",
+      "stakeCurrency": "uPEPE",
+      "bech32Prefix": "ethm"
+   }   
+
+
 ]
