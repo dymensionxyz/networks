@@ -8,7 +8,7 @@
     "explorerUrl": "https://explorer.silknodes.io/dymension-devnet/",
     "exploreTxUrl": "https://explorer.silknodes.io/dymension-devnet/tx/",
     "bech32Prefix": "dym",
-    "currencies": [ "udym" ],
+    "currencies": [ "udym3" ],
     "nativeCurrency": "udym",
     "stakeCurrency": "udym",
     "feeCurrency": "udym",
