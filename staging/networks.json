@@ -123,34 +123,5 @@
     "bech32Prefix": "ethm"
   },
 
- {
-      "da": "Celestia",
-      "chainName": "Yishay",
-      "rpc": "https://rpc-pepe-devnet.dymension.xyz",
-      "rest": "https://rest-pepe-devnet.dymension.xyz",
-      "evm": {
-         "chainId": "0x4d2",
-         "rpc": "https://evmrpc-pepe-devnet.dymension.xyz"
-      },
-      "description": "pepepepepepepe",
-      "type": "RollApp",
-      "custom": true,
-      "coinType": 60,
-      "ibc": {
-         "timeout": 172800000,
-         "channel": "channel-0",
-         "hubChannel": "channel-820"
-      },
-      "logo": "/logos/rollapp-wen-logo.png",
-      "chainId": "pepe_1905-2",
-      "currencies": [
-         "uPEPE"
-      ],
-      "feeCurrency": "uPEPE",
-      "nativeCurrency": "uPEPE",
-      "stakeCurrency": "uPEPE",
-      "bech32Prefix": "ethm"
-   }   
-
 
 ]
