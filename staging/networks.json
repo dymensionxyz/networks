@@ -111,7 +111,7 @@
     "evm": { "chainId": "0x4d2", "rpc": "https://froopyland.dymension.xyz/pepe/evmrpc" },
     "description": "pepepepepepepe",
     "type": "RollApp",
-    "coinType": 60,
+    "coinType": 601,
     "ibc": { "timeout": 172800000, "channel": "channel-0", "hubChannel": "channel-820" },
     "logo": "/logos/rollapp-pepe-logo.png",
     "chainId": "pepe_1234-1",
