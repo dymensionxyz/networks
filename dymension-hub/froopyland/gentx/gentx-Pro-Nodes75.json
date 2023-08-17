@@ -1,0 +1,62 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "Pro-Nodes75",
+          "identity": "3666DD45EF3157F1",
+          "website": "https://node75.org/",
+          "security_contact": "n75pro@pm.me",
+          "details": "Professional validator service"
+        },
+        "commission": {
+          "rate": "0.070000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "min_self_delegation": "100",
+        "delegator_address": "dym1n7r0crzjcfdzquwc6j6v6n29jf9ev7va6vdhvu",
+        "validator_address": "dymvaloper1n7r0crzjcfdzquwc6j6v6n29jf9ev7vae834jx",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "qoZPZY6MmXLcxK+xEpKA7z0W26WoBrPGZj4rsT9HRXk="
+        },
+        "value": {
+          "denom": "udym",
+          "amount": "100000000000000000000000"
+        }
+      }
+    ],
+    "memo": "83d1ef7c305c315211f7780a335f0076f17e0118@0.0.0.0:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+          "key": "AmqJHQJrd+EVJ8gLk8ODZYzCeHJ2l8EkEoe4Rw9K9ULv"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "hvzafWsVrssgXefa08Wp0KmAXgjG5PUMVwwHH3S65CZ5yx8tShGa7TmYxQrDf/KlN03R2YXz2vM+bQ9Bl0kJMAE="
+  ]
+}
