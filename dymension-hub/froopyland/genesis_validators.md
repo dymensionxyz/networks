@@ -29,7 +29,7 @@ These instructions are for creating a basic setup of a single node. Validators s
 ### Install Dymension Hub:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git --branch v1.0.1-beta
+git clone https://github.com/dymensionxyz/dymension.git --branch v1.0.2-beta
 cd dymension
 make install
 ```
@@ -45,8 +45,8 @@ Returns:
 ```
 name: dymension
 server_name: dymd
-version: v1.0.1-beta
-commit: 61e7d3655910c7c55c149f95ec0ced3a476bd2c7
+version: v1.0.2-beta
+commit: 74457e007dc802bd9c0be979baa5d83ab4d3226e
 ```
 
 We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
