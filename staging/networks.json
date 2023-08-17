@@ -125,7 +125,7 @@
 
  {
       "da": "Celestia",
-      "chainName": "PEPE Test",
+      "chainName": "Yishay",
       "rpc": "https://rpc-pepe-devnet.dymension.xyz",
       "rest": "https://rest-pepe-devnet.dymension.xyz",
       "evm": {
@@ -141,7 +141,7 @@
          "channel": "channel-0",
          "hubChannel": "channel-820"
       },
-      "logo": "/static/media/custom-rollapp-logo.30d25b67f060d0db82e225c3964368dc.svg",
+      "logo": "/logos/rollapp-wen-logo.png",
       "chainId": "pepe_1905-2",
       "currencies": [
          "uPEPE"
