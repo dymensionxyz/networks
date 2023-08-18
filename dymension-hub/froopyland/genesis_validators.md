@@ -125,3 +125,52 @@ Please DM Ganeshti#1471 on Dymension's discord with a link of the GitHub PR. Onl
 The Dymension core team will provide Part 2 instructions for replacing the genesis.json after collecting Gentxs. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
 
 ### Welcome aboard!
+
+# Part 2
+
+Welcome to Part 2 of the Genesis Event of the Dymension Hub's testnet. We recommend reviewing `What is a Genesis File?` [here](https://github.com/cosmos/gaia/blob/main/docs/resources/genesis.md). Below you will find the source of the genesis file which includes validator gentx provided in Part 1. Follow these instructions to download the genesis file, validate, and prepare for launching the testnet!
+
+**Genesis File**
+
+```sh
+cp genesis.json ~/.dymension/config/genesis.json
+```
+
+**Genesis sha256**
+
+```bash
+sha256sum ~/.dymension/config/genesis.json
+TODO-HASH ~/.dymension/config/genesis.json
+```
+
+**Validate the Genesis file**
+
+```bash
+dymd validate-genesis
+```
+
+Add seed nodes in config.toml. These nodes can be found in the seeds.txt file.
+
+```sh
+vi $HOME/.dymension/config/config.toml
+```
+
+#### Set validator gas fees
+
+You can set the minimum gas prices for transactions to be accepted into your node's mempool. This sets a lower bound on gas prices, preventing spam.
+
+```sh
+vi $HOME/.dymension/config/app.toml
+```
+
+```sh
+minimum-gas-prices = "0.025udym"
+```
+
+#### Genesis time is: 2023-08-22 14:00 UTC
+
+```bash
+dymd start
+```
+
+Once 2/3rd of staked tokens are online after genesis time the blockchain has begun!
