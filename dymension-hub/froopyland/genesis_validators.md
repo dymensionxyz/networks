@@ -140,7 +140,7 @@ cp genesis.json ~/.dymension/config/genesis.json
 
 ```bash
 sha256sum ~/.dymension/config/genesis.json
-TODO-HASH ~/.dymension/config/genesis.json
+2c39abf9fd87222fc3b8178763e1c0e250029a445a3775b3507e88140910049e ~/.dymension/config/genesis.json
 ```
 
 **Validate the Genesis file**
