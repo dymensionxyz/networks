@@ -155,18 +155,6 @@ Add seed nodes in config.toml. These nodes can be found in the seeds.txt file.
 vi $HOME/.dymension/config/config.toml
 ```
 
-#### Set validator gas fees
-
-You can set the minimum gas prices for transactions to be accepted into your node's mempool. This sets a lower bound on gas prices, preventing spam.
-
-```sh
-vi $HOME/.dymension/config/app.toml
-```
-
-```sh
-minimum-gas-prices = "0.025udym"
-```
-
 #### Genesis time is: 2023-08-22 14:00 UTC
 
 ```bash
