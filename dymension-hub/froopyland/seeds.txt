@@ -1,0 +1,2 @@
+peers:
+f85a4dd43cc31b2ef7363667fcfcf2c5cd25ef04@dymension.peers.stavr.tech:17086
