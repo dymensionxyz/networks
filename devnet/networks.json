@@ -120,4 +120,5 @@
     "nativeCurrency": "uPEPE",
     "stakeCurrency": "uPEPE",
     "bech32Prefix": "ethm"
+  }
 ]
