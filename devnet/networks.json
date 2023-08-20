@@ -1,5 +1,4 @@
 [
-  
   {
     "chainId": "devnet_304-1",
     "chainName": "Dymension Devnet",
@@ -90,14 +89,14 @@
     "chainName": "WEN",
     "rpc": "https://froopyland.dymension.xyz/wen/rpc",
     "rest": "https://froopyland.dymension.xyz/wen/rest",
-    "evm": { "chainId": "0x4d2", "rpc": "https://froopyland.dymension.xyz/wen/evmrpc" },
+    "evm": { "chainId": "0x499602D2", "rpc": "https://froopyland.dymension.xyz/wen/evmrpc" },
     "description": "wen wen wen",
     "type": "RollApp",
     "coinType": 60,
-    "ibc": { "timeout": 172800000, "channel": "channel-1", "hubChannel": "channel-817" },
+    "ibc": { "timeout": 172800000, "channel": "channel-0", "hubChannel": "channel-843" },
     "logo": "/logos/rollapp-wen-logo.png",
     "faucetUrl": "https://discord.com/channels/956961633165529098/1125047988247593010",
-    "chainId": "wen_1234-1",
+    "chainId": "wen_1234567890-1",
     "currencies": [ "uWEN" ],
     "feeCurrency": "uWEN",
     "nativeCurrency": "uWEN",
@@ -121,7 +120,5 @@
     "nativeCurrency": "uPEPE",
     "stakeCurrency": "uPEPE",
     "bech32Prefix": "ethm"
-  } 
-
-
+  }
 ]
