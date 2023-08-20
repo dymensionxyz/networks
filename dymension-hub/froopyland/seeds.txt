@@ -1,2 +1,2 @@
-ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:20556
-
+ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:20556,
+92308bad858b8886e102009bbb45994d57af44e7@rpc-t.dymension.nodestake.top:666
