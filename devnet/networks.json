@@ -82,7 +82,9 @@
     "feeCurrency": "ushine",
     "nativeCurrency": "ushine",
     "stakeCurrency": "ushine",
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
+    "isValidator": true,
+    "analytics": true
   },
   {
     "da": "Avail",
@@ -101,7 +103,9 @@
     "feeCurrency": "uWEN",
     "nativeCurrency": "uWEN",
     "stakeCurrency": "uWEN",
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
+    "isValidator": true,
+    "analytics": true
   },
   {
     "da": "Celestia",
@@ -119,6 +123,8 @@
     "feeCurrency": "uPEPE",
     "nativeCurrency": "uPEPE",
     "stakeCurrency": "uPEPE",
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
+    "isValidator": true,
+    "analytics": true
   }
 ]
