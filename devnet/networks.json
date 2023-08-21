@@ -129,5 +129,21 @@
     "bech32Prefix": "ethm",
     "isValidator": true,
     "analytics": true
+  },
+  {
+    "da": "Celestia",
+    "chainName": "Hylanmp",
+    "description": "hylanmp",
+    "evm": { "chainId": "0x4d2" },
+    "type": "RollApp",
+    "coinType": 60,
+    "logo": "/logos/hylanmp-rollapp-logo.svg",
+    "chainId": "hylanmp_1234-1",
+    "currencies": [ "uhyp" ],
+    "feeCurrency": "uhyp",
+    "nativeCurrency": "uhyp",
+    "stakeCurrency": "uhyp",
+    "bech32Prefix": "ethm",
+    "analytics": false
   }
 ]
