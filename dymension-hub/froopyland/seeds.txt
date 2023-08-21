@@ -1,3 +1,4 @@
 ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:20556,
 92308bad858b8886e102009bbb45994d57af44e7@rpc-t.dymension.nodestake.top:666,
-284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:26157
+284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:26157,
+3f472746f46493309650e5a033076689996c8881@dymension-testnet.rpc.kjnodes.com:14659
