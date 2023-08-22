@@ -25,7 +25,7 @@
 
   {
     "da": "Celestia",
-    "chainName": "wen_1234-1",
+    "chainName": "WEN",
     "rpc": "https://froopyland.dymension.xyz/wen_1234-1/rpc",
     "rest": "https://froopyland.dymension.xyz/wen_1234-1/rest",
     "evm": {
@@ -48,7 +48,8 @@
     "feeCurrency": "uWEN",
     "nativeCurrency": "uWEN",
     "stakeCurrency": "uWEN",
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
+    "analytics": true
   }
 
 ]
