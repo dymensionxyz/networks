@@ -108,7 +108,7 @@
     "feeCurrency": "uGORA",
     "nativeCurrency": "uGORA",
     "stakeCurrency": "uGORA",
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
     "analytics": false
   }
 
