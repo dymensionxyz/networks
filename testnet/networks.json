@@ -80,7 +80,38 @@
     "stakeCurrency": "uRAX",
     "bech32Prefix": "ethm",
     "analytics": false
-  } 
+  },
+
+
+  {
+    "da": "Celestia",
+    "chainName": "GORA",
+    "rpc": "https://froopyland.dymension.xyz/goracle_2234-3/rpc",
+    "rest": "https://froopyland.dymension.xyz/goracle_2234-3/rest",
+    "evm": {
+      "chainId": "0x8ba",
+      "rpc": "https://froopyland.dymension.xyz/goracle_2234-3/evmrpc"
+    },
+    "description": "Gora-critical insurance of data availability",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-34"
+    },
+    "logo": "/logos/goracle_2234-3.png",
+    "chainId": "goracle_2234-3",
+    "currencies": [
+      "uGORA"
+    ],
+    "feeCurrency": "uGORA",
+    "nativeCurrency": "uGORA",
+    "stakeCurrency": "uGORA",
+    "bech32Prefix": "ethm"
+    "analytics": false
+  }
+
 
 
 
