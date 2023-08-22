@@ -21,5 +21,34 @@
     "type": "Hub",
     "analytics": true,
     "website": "https://portal.dymension.xyz"
+  },
+
+  {
+    "da": "Celestia",
+    "chainName": "wen_1234-1",
+    "rpc": "https://froopyland.dymension.xyz/wen_1234-1/rpc",
+    "rest": "https://froopyland.dymension.xyz/wen_1234-1/rest",
+    "evm": {
+      "chainId": "0x4d2",
+      "rpc": "https://froopyland.dymension.xyz/wen_1234-1/evmrpc"
+    },
+    "description": "wen wen wen",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-0"
+    },
+    "logo": "/logos/wen_1234_1.png",
+    "chainId": "wen_1234-1",
+    "currencies": [
+      "uWEN"
+    ],
+    "feeCurrency": "uWEN",
+    "nativeCurrency": "uWEN",
+    "stakeCurrency": "uWEN",
+    "bech32Prefix": "ethm"
   }
+
 ]
