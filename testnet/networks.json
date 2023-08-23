@@ -209,5 +209,36 @@
         "nativeCurrency": "uSUSA",
         "stakeCurrency": "uSUSA",
         "bech32Prefix": "ethm"
-    }
+    }, 
+
+{
+  "da": "Avail",
+  "rpc": "https://froopyland.dymension.xyz/jiemie_1616-6/rpc",
+  "rest": "https://froopyland.dymension.xyz/jiemie_1616-6/rest",
+  "evm": {
+    "chainId": "0x650",
+    "rpc": "https://froopyland.dymension.xyz/jiemie_1616-6/evmrpc"
+  },
+  "chainName": "PeoplePlus",
+  "description": "Born for all, for all for one, for all for one",
+  "type": "RollApp",
+  "coinType": 60,
+  "ibc": {
+    "timeout": 172800000,
+    "channel": "channel-0",
+    "hubChannel": "channel-1106"
+  },
+  "logo": "/logos/jiemie_1616-6.png",
+  "chainId": "jiemie_1616-6",
+  "currencies": [
+    "uPPP"
+  ],
+  "feeCurrency": "uPPP",
+  "nativeCurrency": "uPPP",
+  "stakeCurrency": "uPPP",
+  "bech32Prefix": "ethm",
+   "analytics": false
+
+}
+
 ]
