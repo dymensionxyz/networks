@@ -109,7 +109,7 @@
     "nativeCurrency": "uGORA",
     "stakeCurrency": "uGORA",
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true
   }
 
 
