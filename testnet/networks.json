@@ -11,9 +11,7 @@
         "explorerUrl": "https://explorer.silknodes.io/dymension",
         "exploreTxUrl": "https://explorer.silknodes.io/dymension/tx/",
         "bech32Prefix": "dym",
-        "currencies": [
-            "udym"
-        ],
+        "currencies": ["udym"],
         "nativeCurrency": "udym",
         "stakeCurrency": "udym",
         "feeCurrency": "udym",
@@ -52,9 +50,7 @@
         },
         "logo": "/logos/wen_1234_1.png",
         "chainId": "wen_1234-1",
-        "currencies": [
-            "uWEN"
-        ],
+        "currencies": ["uWEN"],
         "feeCurrency": "uWEN",
         "nativeCurrency": "uWEN",
         "stakeCurrency": "uWEN",
@@ -80,9 +76,7 @@
         },
         "logo": "/logos/phongdn_1_1 .png",
         "chainId": "phongdn_1-1",
-        "currencies": [
-            "uRAX"
-        ],
+        "currencies": ["uRAX"],
         "feeCurrency": "uRAX",
         "nativeCurrency": "uRAX",
         "stakeCurrency": "uRAX",
@@ -108,9 +102,7 @@
         },
         "logo": "/logos/goracle_2234-3.png",
         "chainId": "goracle_2234-3",
-        "currencies": [
-            "uGORA"
-        ],
+        "currencies": ["uGORA"],
         "feeCurrency": "uGORA",
         "nativeCurrency": "uGORA",
         "stakeCurrency": "uGORA",
@@ -135,9 +127,7 @@
         },
         "logo": "/logos/tofake.png",
         "chainId": "tofake_1105-1",
-        "currencies": [
-            "uRAX"
-        ],
+        "currencies": ["uRAX"],
         "feeCurrency": "uRAX",
         "nativeCurrency": "uRAX",
         "stakeCurrency": "uRAX",
@@ -164,9 +154,7 @@
         },
         "logo": "/logos/gochain.png",
         "chainId": "gochain_14325-1",
-        "currencies": [
-            "uGAS"
-        ],
+        "currencies": ["uGAS"],
         "feeCurrency": "uGAS",
         "nativeCurrency": "uGAS",
         "stakeCurrency": "uGAS",
@@ -192,12 +180,34 @@
         },
         "logo": "/logos/vidi.png",
         "chainId": "vidi_8885558881-1",
-        "currencies": [
-            "uRAX"
-        ],
+        "currencies": ["uRAX"],
         "feeCurrency": "uRAX",
         "nativeCurrency": "uRAX",
         "stakeCurrency": "uRAX",
+        "bech32Prefix": "ethm"
+    },
+    {
+        "da": "Avail",
+        "chainName": "SUSA",
+        "rpc": "https://froopyland.dymension.xyz/susana_5339/rpc",
+        "rest": "https://froopyland.dymension.xyz/susana_5339/rest",
+        "evm": {
+            "chainId": "0x14db",
+            "rpc": "https://froopyland.dymension.xyz/susana_5339/evmrpc"
+        },
+        "type": "RollApp",
+        "coinType": 60,
+        "ibc": {
+            "timeout": 172800000,
+            "channel": "channel-0",
+            "hubChannel": "channel-1103"
+        },
+        "logo": "/logos/susana_5339-1.png",
+        "chainId": "susana_5339-1",
+        "currencies": ["uSUSA"],
+        "feeCurrency": "uSUSA",
+        "nativeCurrency": "uSUSA",
+        "stakeCurrency": "uSUSA",
         "bech32Prefix": "ethm"
     }
 ]
