@@ -127,7 +127,7 @@
       "timeout": 172800000,
       "channel": "channel-0"
     },
-    "logo": "logos/tofake.png",
+    "logo": "/logos/tofake.png",
     "chainId": "tofake_1105-1",
     "currencies": [
       "uRAX"
