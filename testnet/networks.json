@@ -191,7 +191,7 @@
             "channel": "channel-0",
             "hubChannel": "channel-45"
         },
-        "logo": "/static/media/custom-rollapp-logo.30d25b67f060d0db82e225c3964368dc.svg",
+        "logo": "/logos/vidi.png",
         "chainId": "vidi_8885558881-1",
         "currencies": [
             "uRAX"
