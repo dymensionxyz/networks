@@ -125,7 +125,8 @@
     "coinType": 60,
     "ibc": {
       "timeout": 172800000,
-      "channel": "channel-0"
+      "channel": "channel-0",
+      "hubChannel": "channel-115"
     },
     "logo": "/logos/tofake.png",
     "chainId": "tofake_1105-1",
