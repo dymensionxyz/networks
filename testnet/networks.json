@@ -184,7 +184,6 @@
         },
         "website": "https://link3.to/vidiweb3blockchain",
         "type": "RollApp",
-        "custom": true,
         "coinType": 60,
         "ibc": {
             "timeout": 172800000,
