@@ -155,7 +155,7 @@
         },
         "chainName": "Gochain",
         "type": "RollApp",
-        "custom": true,
+        "analytics": false,
         "coinType": 60,
         "ibc": {
             "timeout": 172800000,
