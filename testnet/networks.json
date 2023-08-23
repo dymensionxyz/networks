@@ -79,7 +79,7 @@
     "nativeCurrency": "uRAX",
     "stakeCurrency": "uRAX",
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true
   },
 
 
