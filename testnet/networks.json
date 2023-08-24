@@ -294,6 +294,35 @@
    "stakeCurrency":"uKYN",
    "bech32Prefix":"ethm",
      "analytics": true
+},
+
+{
+   "da":"Avail",
+   "rpc":"https://froopyland.dymension.xyz/myrollapp_160-1/rpc",
+   "rest":"https://froopyland.dymension.xyz/myrollapp_160-1/rpc",
+   "evm":{
+      "chainId":"0xa0",
+      "rpc":"https://froopyland.dymension.xyz/myrollapp_160-1/rpc"
+   },
+   "chainName":"SBB_Modular",
+   "description":"My Rollapp will allow all users to pay for node services without technical knowledge and for all modular projects of the Celestia ecosystem, (Avail, Celestia, dYmension, Radius, etc...)",
+   "type":"RollApp",
+   "coinType":60,
+   "ibc":{
+      "timeout":172800000,
+      "channel":"channel-0",
+      "hubChannel":"channel-260"
+   },
+   "logo":"/logos/myrollapp_160-1.png",
+   "chainId":"myrollapp_160-1",
+   "currencies":[
+      "uMOD"
+   ],
+   "feeCurrency":"uMOD",
+   "nativeCurrency":"uMOD",
+   "stakeCurrency":"uMOD",
+   "bech32Prefix":"ethm",
+   "analytics": false
 }
 
 ]
