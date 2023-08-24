@@ -322,7 +322,7 @@
    "nativeCurrency":"uMOD",
    "stakeCurrency":"uMOD",
    "bech32Prefix":"ethm",
-   "analytics": false
+   "analytics": true
 }
 
 ]
