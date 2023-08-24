@@ -267,7 +267,7 @@
         "nativeCurrency": "uPPP",
         "stakeCurrency": "uPPP",
         "bech32Prefix": "ethm",
-        "analytics": false
+        "analytics": true
     },  
 
 {
