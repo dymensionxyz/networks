@@ -302,7 +302,7 @@
    "rest":"https://froopyland.dymension.xyz/myrollapp_160-1/rpc",
    "evm":{
       "chainId":"0xa0",
-      "rpc":"https://froopyland.dymension.xyz/myrollapp_160-1/rpc"
+      "rpc":"https://froopyland.dymension.xyz/myrollapp_160-1/evmrpc"
    },
    "chainName":"SBB_Modular",
    "description":"My Rollapp will allow all users to pay for node services without technical knowledge and for all modular projects of the Celestia ecosystem, (Avail, Celestia, dYmension, Radius, etc...)",
