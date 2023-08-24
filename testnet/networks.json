@@ -293,7 +293,7 @@
    "nativeCurrency":"uKYN",
    "stakeCurrency":"uKYN",
    "bech32Prefix":"ethm",
-     "analytics": false
+     "analytics": true
 }
 
 ]
