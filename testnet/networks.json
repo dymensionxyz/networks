@@ -264,6 +264,6 @@
     "nativeCurrency": "uPASH",
     "stakeCurrency": "uPASH",
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true
 }
 ]
