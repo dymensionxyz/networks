@@ -363,6 +363,7 @@
       "feeCurrency":"uTVH",
       "nativeCurrency":"uTVH",
       "stakeCurrency":"uTVH",
-      "bech32Prefix":"ethm"
+      "bech32Prefix":"ethm",
+      "analytics":true
    }
 ]
