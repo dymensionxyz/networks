@@ -30,7 +30,7 @@
       },
       "logo":"/logos/dymension-logo.svg",
       "type":"Hub",
-      "analytics":true,
+      "analytics":false,
       "website":"https://portal.dymension.xyz"
    },
    {
@@ -58,7 +58,7 @@
       "nativeCurrency":"uPASH",
       "stakeCurrency":"uPASH",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Celestia",
@@ -86,7 +86,7 @@
       "nativeCurrency":"uWEN",
       "stakeCurrency":"uWEN",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Celestia",
@@ -114,7 +114,7 @@
       "nativeCurrency":"uRAX",
       "stakeCurrency":"uRAX",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Celestia",
@@ -142,7 +142,7 @@
       "nativeCurrency":"uGORA",
       "stakeCurrency":"uGORA",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Celestia",
@@ -169,7 +169,7 @@
       "nativeCurrency":"uRAX",
       "stakeCurrency":"uRAX",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Celestia",
@@ -182,7 +182,7 @@
       },
       "chainName":"Gochain",
       "type":"RollApp",
-      "analytics":true,
+      "analytics":false,
       "coinType":60,
       "ibc":{
          "timeout":172800000,
@@ -252,7 +252,7 @@
       "nativeCurrency":"uSUSA",
       "stakeCurrency":"uSUSA",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Avail",
@@ -280,7 +280,7 @@
       "nativeCurrency":"uPPP",
       "stakeCurrency":"uPPP",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Avail",
@@ -308,7 +308,7 @@
       "nativeCurrency":"uKYN",
       "stakeCurrency":"uKYN",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Avail",
@@ -336,7 +336,7 @@
       "nativeCurrency":"uMOD",
       "stakeCurrency":"uMOD",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    },
    {
       "da":"Celestia",
@@ -364,6 +364,6 @@
       "nativeCurrency":"uTVH",
       "stakeCurrency":"uTVH",
       "bech32Prefix":"ethm",
-      "analytics":true
+      "analytics":false
    }
 ]
