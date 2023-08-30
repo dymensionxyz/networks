@@ -15,7 +15,7 @@
       {
         "displayDenom": "DYM",
         "baseDenom": "udym",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo": "/logos/dymension-logo.svg",
         "type": "main"
       }
@@ -58,7 +58,7 @@
       {
         "displayDenom": "PASH",
         "baseDenom": "uPASH",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/pashom_45678-1.png",
         "type": "main"
       }
@@ -89,7 +89,7 @@
       {
         "displayDenom": "WEN",
         "baseDenom": "uWEN",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo": "/logos/wen_1234_1.png",
         "type": "main"
       }
