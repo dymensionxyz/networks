@@ -119,7 +119,7 @@
     "currencies": [
       {
         "baseDenom": "uRAX",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo": "/logos/tofake.png",
         "displayDenom": "RAX",
         "type": "main"
@@ -150,7 +150,7 @@
     "currencies": [
       {
         "baseDenom": "uGORA",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo": "/logos/goracle_2234-3.png",
         "displayDenom": "GORA",
         "type": "main"
@@ -180,7 +180,7 @@
     "currencies": [
       {
         "baseDenom": "uRAX",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo": "/logos/tofake.png",
         "displayDenom": "RAX",
         "type": "main"
@@ -212,7 +212,7 @@
     "currencies": [
       {
         "baseDenom": "uGAS",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo": "/logos/gochain.png",
         "displayDenom": "GAS",
         "type": "main"
@@ -243,7 +243,7 @@
     "currencies": [
       {
         "baseDenom": "uRAX",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo": "/logos/tofake.png",
         "displayDenom": "RAX",
         "type": "main"
@@ -272,7 +272,7 @@
     "currencies": [
       {
         "baseDenom": "uSUSA",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/susana_5339-1.png",
         "displayDenom": "SUSA",
         "type": "main"
@@ -303,7 +303,7 @@
     "currencies": [
       {
         "baseDenom": "uPPP",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/jiemie_1616-6.png",
         "displayDenom": "PPP",
         "type": "main"
@@ -334,7 +334,7 @@
     "currencies": [
       {
         "baseDenom": "uKYN",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/kynraze_2223-1.png",
         "displayDenom": "KYN",
         "type": "main"
@@ -365,7 +365,7 @@
     "currencies": [
       {
         "baseDenom": "uMOD",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/myrollapp_160-1.png",
         "displayDenom": "MOD",
         "type": "main"
@@ -396,7 +396,7 @@
     "currencies": [
       {
         "baseDenom": "uTVH",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/thaivuhien_232-1.png",
         "displayDenom": "TVH",
         "type": "main"
@@ -426,7 +426,7 @@
     "currencies": [
       {
         "baseDenom": "uJOHN",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/john_5858-1.png",
         "displayDenom": "JOHN",
         "type": "main"
@@ -455,7 +455,7 @@
     "currencies": [
       {
         "baseDenom": "uLIN",
-        "coinDecimals": 18,
+        "decimals": 18,
         "logo":"/logos/linda_223344-123.png",
         "displayDenom": "LIN",
         "type": "main"
