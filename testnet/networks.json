@@ -1,421 +1,421 @@
 [
-   {
-      "chainId":"froopyland_100-1",
-      "chainName":"Dymension Froopyland",
-      "rpc":"https://froopyland.rpc.silknodes.io",
-      "rest":"https://froopyland.api.silknodes.io",
-      "evm":{
-         "chainId":"0x64",
-         "rpc":"https://froopyland-json.rpc.silknodes.io"
-      },
-      "explorerUrl":"https://explorer.silknodes.io/dymension",
-      "exploreTxUrl":"https://explorer.silknodes.io/dymension/tx/",
-      "bech32Prefix":"dym",
-      "currencies":[
-         "udym"
-      ],
-      "nativeCurrency":"udym",
-      "stakeCurrency":"udym",
-      "feeCurrency":"udym",
-      "coinType":60,
-      "validatorsLogosStorageDir":"hub",
-      "faucetUrl":"https://discord.com/channels/956961633165529098/1143231362468434022",
-      "ibc":{
-         "timeout":172800000
-      },
-      "gasPriceSteps":{
-         "low":0.25,
-         "average":0.4,
-         "high":0.55
-      },
-      "logo":"/logos/dymension-logo.svg",
-      "type":"Hub",
-      "analytics":true,
-      "website":"https://portal.dymension.xyz"
-   },
-   {
-      "da":"Avail",
-      "rpc":"https://froopyland.dymension.xyz/pashom_45678-1/rpc",
-      "rest":"https://froopyland.dymension.xyz/pashom_45678-1/rest",
-      "evm":{
-         "chainId":"0xb26e",
-         "rpc":"https://froopyland.dymension.xyz/pashom_45678-1/evmrpc"
-      },
-      "chainName":"PashChain",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-1105"
-      },
-      "logo":"/logos/pashom_45678-1.png",
-      "chainId":"pashom_45678-1",
-      "currencies":[
-         "uPASH"
-      ],
-      "feeCurrency":"uPASH",
-      "nativeCurrency":"uPASH",
-      "stakeCurrency":"uPASH",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Celestia",
-      "chainName":"WEN",
-      "rpc":"https://froopyland.dymension.xyz/wen_1234-1/rpc",
-      "rest":"https://froopyland.dymension.xyz/wen_1234-1/rest",
-      "evm":{
-         "chainId":"0x4d2",
-         "rpc":"https://froopyland.dymension.xyz/wen_1234-1/evmrpc"
-      },
-      "description":"wen wen wen",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-0"
-      },
-      "logo":"/logos/wen_1234_1.png",
-      "chainId":"wen_1234-1",
-      "currencies":[
-         "uWEN"
-      ],
-      "feeCurrency":"uWEN",
-      "nativeCurrency":"uWEN",
-      "stakeCurrency":"uWEN",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Celestia",
-      "rpc":"https://froopyland.dymension.xyz/phongdn_1-1/rpc",
-      "chainName":"PhongDn",
-      "rest":"https://froopyland.dymension.xyz/phongdn_1-1/rest",
-      "evm":{
-         "chainId":"0x1",
-         "rpc":"https://froopyland.dymension.xyz/phongdn_1-1/evmrpc"
-      },
-      "description":"Mr. PDN's personal project",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-2"
-      },
-      "logo":"/logos/phongdn_1_1 .png",
-      "chainId":"phongdn_1-1",
-      "currencies":[
-         "uRAX"
-      ],
-      "feeCurrency":"uRAX",
-      "nativeCurrency":"uRAX",
-      "stakeCurrency":"uRAX",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Celestia",
-      "chainName":"GORA",
-      "rpc":"https://froopyland.dymension.xyz/goracle_2234-3/rpc",
-      "rest":"https://froopyland.dymension.xyz/goracle_2234-3/rest",
-      "evm":{
-         "chainId":"0x8ba",
-         "rpc":"https://froopyland.dymension.xyz/goracle_2234-3/evmrpc"
-      },
-      "description":"Gora-critical insurance of data availability",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-34"
-      },
-      "logo":"/logos/goracle_2234-3.png",
-      "chainId":"goracle_2234-3",
-      "currencies":[
-         "uGORA"
-      ],
-      "feeCurrency":"uGORA",
-      "nativeCurrency":"uGORA",
-      "stakeCurrency":"uGORA",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Celestia",
-      "chainName":"ToS",
-      "rpc":"https://froopyland.dymension.xyz/tofake_1105-1/rpc",
-      "rest":"https://froopyland.dymension.xyz/tofake_1105-1/rest",
-      "evm":{
-         "chainId":"0x451",
-         "rpc":"https://froopyland.dymension.xyz/tofake_1105-1/evmrpc"
-      },
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-115"
-      },
-      "logo":"/logos/tofake.png",
-      "chainId":"tofake_1105-1",
-      "currencies":[
-         "uRAX"
-      ],
-      "feeCurrency":"uRAX",
-      "nativeCurrency":"uRAX",
-      "stakeCurrency":"uRAX",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Celestia",
-      "rpc":"https://froopyland.dymension.xyz/gochain/rpc",
-      "description":"platform for exploring, creating, and trading NFTs",
-      "rest":"https://froopyland.dymension.xyz/gochain/rest",
-      "evm":{
-         "chainId":"0x37f5",
-         "rpc":"https://froopyland.dymension.xyz/gochain/evmrpc"
-      },
-      "chainName":"Gochain",
-      "type":"RollApp",
-      "analytics":false,
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-198"
-      },
-      "logo":"/logos/gochain.png",
-      "chainId":"gochain_14325-1",
-      "currencies":[
-         "uGAS"
-      ],
-      "feeCurrency":"uGAS",
-      "nativeCurrency":"uGAS",
-      "stakeCurrency":"uGAS",
-      "bech32Prefix":"ethm"
-   },
-   {
-      "da":"Celestia",
-      "description":"Vidi Crypto RollApp - Your Ultimate Cryptocurrency Tracker! Experience the future of cryptocurrency tracking with Vidi. Our RollApp is a one-of-a-kind solution for crypto enthusiasts. With real-time data updates, customizable portfolios, interactive charts, and insightful analytics, Vidi helps you stay ahead in the world of digital assets. Whether you're a seasoned trader or just getting started, Vidi Crypto RollApp is your go-to tool for making informed investment decisions. Join the crypto revolution today!",
-      "chainName":"Vidi",
-      "rpc":"https://froopyland.dymension.xyz/vidi_888555888/rpc",
-      "rest":"https://froopyland.dymension.xyz/vidi_888555888/rest",
-      "evm":{
-         "chainId":"0x2119ede61",
-         "rpc":"https://froopyland.dymension.xyz/vidi_888555888/evmrpc"
-      },
-      "website":"https://link3.to/vidiweb3blockchain",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-45"
-      },
-      "logo":"/logos/vidi.png",
-      "chainId":"vidi_8885558881-1",
-      "currencies":[
-         "uRAX"
-      ],
-      "feeCurrency":"uRAX",
-      "nativeCurrency":"uRAX",
-      "stakeCurrency":"uRAX",
-      "bech32Prefix":"ethm"
-   },
-   {
-      "da":"Avail",
-      "chainName":"SUSA",
-      "rpc":"https://froopyland.dymension.xyz/susana_5339/rpc",
-      "rest":"https://froopyland.dymension.xyz/susana_5339/rest",
-      "evm":{
-         "chainId":"0x14db",
-         "rpc":"https://froopyland.dymension.xyz/susana_5339/evmrpc"
-      },
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-1103"
-      },
-      "logo":"/logos/susa.png",
-      "chainId":"susana_5339-1",
-      "currencies":[
-         "uSUSA"
-      ],
-      "feeCurrency":"uSUSA",
-      "nativeCurrency":"uSUSA",
-      "stakeCurrency":"uSUSA",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Avail",
-      "rpc":"https://froopyland.dymension.xyz/jiemie_1616-6/rpc",
-      "rest":"https://froopyland.dymension.xyz/jiemie_1616-6/rest",
-      "evm":{
-         "chainId":"0x650",
-         "rpc":"https://froopyland.dymension.xyz/jiemie_1616-6/evmrpc"
-      },
-      "chainName":"PeoplePlus",
-      "description":"Born for all, for all for one, for all for one",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-1106"
-      },
-      "logo":"/logos/jiemie_1616-6.png",
-      "chainId":"jiemie_1616-6",
-      "currencies":[
-         "uPPP"
-      ],
-      "feeCurrency":"uPPP",
-      "nativeCurrency":"uPPP",
-      "stakeCurrency":"uPPP",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Avail",
-      "rpc":"https://froopyland.dymension.xyz/kynraze_2223-1/rpc",
-      "rest":"https://froopyland.dymension.xyz/kynraze_2223-1/rest",
-      "evm":{
-         "chainId":"0x8af",
-         "rpc":"https://froopyland.dymension.xyz/kynraze_2223-1/evmrpc"
-      },
-      "chainName":"Kynraze",
-      "description":"Discover a new way to enhance your digital experience. Our platform offers a unique blend of features that cater to various needs. Our goal is to provide an all-in-one solution. Experience the future of convenience.",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-5",
-         "hubChannel":"channel-536"
-      },
-      "logo":"/logos/kynraze_2223-1.png",
-      "chainId":"kynraze_2223-1",
-      "currencies":[
-         "uKYN"
-      ],
-      "feeCurrency":"uKYN",
-      "nativeCurrency":"uKYN",
-      "stakeCurrency":"uKYN",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Avail",
-      "rpc":"https://froopyland.dymension.xyz/myrollapp_160-1/rpc",
-      "rest":"https://froopyland.dymension.xyz/myrollapp_160-1/rest",
-      "evm":{
-         "chainId":"0xa0",
-         "rpc":"https://froopyland.dymension.xyz/myrollapp_160-1/evmrpc"
-      },
-      "chainName":"SBB_Modular",
-      "description":"My Rollapp will allow all users to pay for node services without technical knowledge and for all modular projects of the Celestia ecosystem, (Avail, Celestia, dYmension, Radius, etc...)",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-7",
-         "hubChannel":"channel-260"
-      },
-      "logo":"/logos/myrollapp_160-1.png",
-      "chainId":"myrollapp_160-1",
-      "currencies":[
-         "uMOD"
-      ],
-      "feeCurrency":"uMOD",
-      "nativeCurrency":"uMOD",
-      "stakeCurrency":"uMOD",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Celestia",
-      "rpc":"https://froopyland.dymension.xyz/thaivuhien_232-1/rpc",
-      "rest":"https://froopyland.dymension.xyz/thaivuhien_232-1/rest",
-      "evm":{
-         "chainId":"0xe8",
-         "rpc":"https://froopyland.dymension.xyz/thaivuhien_232-1/evmrpc"
-      },
-      "chainName":"TVH Finance",
-      "description":"Empower Your Wealth with Decentralized Finance",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-422"
-      },
-      "logo":"/logos/thaivuhien_232-1.png",
-      "chainId":"thaivuhien_232-1",
-      "currencies":[
-         "uTVH"
-      ],
-      "feeCurrency":"uTVH",
-      "nativeCurrency":"uTVH",
-      "stakeCurrency":"uTVH",
-      "bech32Prefix":"ethm",
-      "analytics":false
-   },
-   {
-      "da":"Celestia",
-      "chainName":"JOHN-LEGEND",
-      "rpc":"https://froopyland.dymension.xyz/john_5858/rpc",
-      "rest":"https://froopyland.dymension.xyz/john_5858/rest",
-      "evm":{
-         "chainId":"0x16e2",
-         "rpc":"https://froopyland.dymension.xyz/john_5858/evmrpc"
-      },
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-0",
-         "hubChannel":"channel-4158"
-      },
-      "logo":"/logos/john_5858-1.png",
-      "chainId":"john_5858-1",
-      "currencies":[
-         "uJOHN"
-      ],
-      "feeCurrency":"uJOHN",
-      "nativeCurrency":"uJOHN",
-      "stakeCurrency":"uJOHN",
-      "bech32Prefix":"ethm"
-   },
-   {
-      "da":"Avail",
-      "rpc":"https://froopyland.dymension.xyz/linda_223344/rpc",
-      "rest":"https://froopyland.dymension.xyz/linda_223344/rest",
-      "evm":{
-         "chainId":"0x36870",
-         "rpc":"https://froopyland.dymension.xyz/linda_223344/evmrpc"
-      },
-      "chainName":"MOON",
-      "type":"RollApp",
-      "coinType":60,
-      "ibc":{
-         "timeout":172800000,
-         "channel":"channel-99",
-         "hubChannel":"channel-3378"
-      },
-      "logo":"/logos/linda_223344-123.png",
-      "chainId":"linda_223344-123",
-      "currencies":[
-         "uLIN"
-      ],
-      "feeCurrency":"uLIN",
-      "nativeCurrency":"uLIN",
-      "stakeCurrency":"uLIN",
-      "bech32Prefix":"ethm"
-   }
+  {
+    "chainId": "froopyland_100-1",
+    "chainName": "Dymension Froopyland",
+    "rpc": "https://froopyland.rpc.silknodes.io",
+    "rest": "https://froopyland.api.silknodes.io",
+    "evm": {
+      "chainId": "0x64",
+      "rpc": "https://froopyland-json.rpc.silknodes.io"
+    },
+    "explorerUrl": "https://explorer.silknodes.io/dymension",
+    "exploreTxUrl": "https://explorer.silknodes.io/dymension/tx/",
+    "bech32Prefix": "dym",
+    "currencies": [
+      "udym"
+    ],
+    "nativeCurrency": "udym",
+    "stakeCurrency": "udym",
+    "feeCurrency": "udym",
+    "coinType": 60,
+    "validatorsLogosStorageDir": "hub",
+    "faucetUrl": "https://discord.com/channels/956961633165529098/1143231362468434022",
+    "ibc": {
+      "timeout": 172800000
+    },
+    "gasPriceSteps": {
+      "low": 0.25,
+      "average": 0.4,
+      "high": 0.55
+    },
+    "logo": "/logos/dymension-logo.svg",
+    "type": "Hub",
+    "analytics": true,
+    "website": "https://portal.dymension.xyz"
+  },
+  {
+    "da": "Avail",
+    "rpc": "https://froopyland.dymension.xyz/pashom_45678-1/rpc",
+    "rest": "https://froopyland.dymension.xyz/pashom_45678-1/rest",
+    "evm": {
+      "chainId": "0xb26e",
+      "rpc": "https://froopyland.dymension.xyz/pashom_45678-1/evmrpc"
+    },
+    "chainName": "PashChain",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-1105"
+    },
+    "logo": "/logos/pashom_45678-1.png",
+    "chainId": "pashom_45678-1",
+    "currencies": [
+      "uPASH"
+    ],
+    "feeCurrency": "uPASH",
+    "nativeCurrency": "uPASH",
+    "stakeCurrency": "uPASH",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Celestia",
+    "chainName": "WEN",
+    "rpc": "https://froopyland.dymension.xyz/wen_1234-1/rpc",
+    "rest": "https://froopyland.dymension.xyz/wen_1234-1/rest",
+    "evm": {
+      "chainId": "0x4d2",
+      "rpc": "https://froopyland.dymension.xyz/wen_1234-1/evmrpc"
+    },
+    "description": "wen wen wen",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-0"
+    },
+    "logo": "/logos/wen_1234_1.png",
+    "chainId": "wen_1234-1",
+    "currencies": [
+      "uWEN"
+    ],
+    "feeCurrency": "uWEN",
+    "nativeCurrency": "uWEN",
+    "stakeCurrency": "uWEN",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Celestia",
+    "rpc": "https://froopyland.dymension.xyz/phongdn_1-1/rpc",
+    "chainName": "PhongDn",
+    "rest": "https://froopyland.dymension.xyz/phongdn_1-1/rest",
+    "evm": {
+      "chainId": "0x1",
+      "rpc": "https://froopyland.dymension.xyz/phongdn_1-1/evmrpc"
+    },
+    "description": "Mr. PDN's personal project",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-2"
+    },
+    "logo": "/logos/phongdn_1_1 .png",
+    "chainId": "phongdn_1-1",
+    "currencies": [
+      "uRAX"
+    ],
+    "feeCurrency": "uRAX",
+    "nativeCurrency": "uRAX",
+    "stakeCurrency": "uRAX",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Celestia",
+    "chainName": "GORA",
+    "rpc": "https://froopyland.dymension.xyz/goracle_2234-3/rpc",
+    "rest": "https://froopyland.dymension.xyz/goracle_2234-3/rest",
+    "evm": {
+      "chainId": "0x8ba",
+      "rpc": "https://froopyland.dymension.xyz/goracle_2234-3/evmrpc"
+    },
+    "description": "Gora-critical insurance of data availability",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-34"
+    },
+    "logo": "/logos/goracle_2234-3.png",
+    "chainId": "goracle_2234-3",
+    "currencies": [
+      "uGORA"
+    ],
+    "feeCurrency": "uGORA",
+    "nativeCurrency": "uGORA",
+    "stakeCurrency": "uGORA",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Celestia",
+    "chainName": "ToS",
+    "rpc": "https://froopyland.dymension.xyz/tofake_1105-1/rpc",
+    "rest": "https://froopyland.dymension.xyz/tofake_1105-1/rest",
+    "evm": {
+      "chainId": "0x451",
+      "rpc": "https://froopyland.dymension.xyz/tofake_1105-1/evmrpc"
+    },
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-115"
+    },
+    "logo": "/logos/tofake.png",
+    "chainId": "tofake_1105-1",
+    "currencies": [
+      "uRAX"
+    ],
+    "feeCurrency": "uRAX",
+    "nativeCurrency": "uRAX",
+    "stakeCurrency": "uRAX",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Celestia",
+    "rpc": "https://froopyland.dymension.xyz/gochain/rpc",
+    "description": "platform for exploring, creating, and trading NFTs",
+    "rest": "https://froopyland.dymension.xyz/gochain/rest",
+    "evm": {
+      "chainId": "0x37f5",
+      "rpc": "https://froopyland.dymension.xyz/gochain/evmrpc"
+    },
+    "chainName": "Gochain",
+    "type": "RollApp",
+    "analytics": false,
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-198"
+    },
+    "logo": "/logos/gochain.png",
+    "chainId": "gochain_14325-1",
+    "currencies": [
+      "uGAS"
+    ],
+    "feeCurrency": "uGAS",
+    "nativeCurrency": "uGAS",
+    "stakeCurrency": "uGAS",
+    "bech32Prefix": "ethm"
+  },
+  {
+    "da": "Celestia",
+    "description": "Vidi Crypto RollApp - Your Ultimate Cryptocurrency Tracker! Experience the future of cryptocurrency tracking with Vidi. Our RollApp is a one-of-a-kind solution for crypto enthusiasts. With real-time data updates, customizable portfolios, interactive charts, and insightful analytics, Vidi helps you stay ahead in the world of digital assets. Whether you're a seasoned trader or just getting started, Vidi Crypto RollApp is your go-to tool for making informed investment decisions. Join the crypto revolution today!",
+    "chainName": "Vidi",
+    "rpc": "https://froopyland.dymension.xyz/vidi_888555888/rpc",
+    "rest": "https://froopyland.dymension.xyz/vidi_888555888/rest",
+    "evm": {
+      "chainId": "0x2119ede61",
+      "rpc": "https://froopyland.dymension.xyz/vidi_888555888/evmrpc"
+    },
+    "website": "https://link3.to/vidiweb3blockchain",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-45"
+    },
+    "logo": "/logos/vidi.png",
+    "chainId": "vidi_8885558881-1",
+    "currencies": [
+      "uRAX"
+    ],
+    "feeCurrency": "uRAX",
+    "nativeCurrency": "uRAX",
+    "stakeCurrency": "uRAX",
+    "bech32Prefix": "ethm"
+  },
+  {
+    "da": "Avail",
+    "chainName": "SUSA",
+    "rpc": "https://froopyland.dymension.xyz/susana_5339/rpc",
+    "rest": "https://froopyland.dymension.xyz/susana_5339/rest",
+    "evm": {
+      "chainId": "0x14db",
+      "rpc": "https://froopyland.dymension.xyz/susana_5339/evmrpc"
+    },
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-2",
+      "hubChannel": "channel-1103"
+    },
+    "logo": "/logos/susa.png",
+    "chainId": "susana_5339-1",
+    "currencies": [
+      "uSUSA"
+    ],
+    "feeCurrency": "uSUSA",
+    "nativeCurrency": "uSUSA",
+    "stakeCurrency": "uSUSA",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Avail",
+    "rpc": "https://froopyland.dymension.xyz/jiemie_1616-6/rpc",
+    "rest": "https://froopyland.dymension.xyz/jiemie_1616-6/rest",
+    "evm": {
+      "chainId": "0x650",
+      "rpc": "https://froopyland.dymension.xyz/jiemie_1616-6/evmrpc"
+    },
+    "chainName": "PeoplePlus",
+    "description": "Born for all, for all for one, for all for one",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-1106"
+    },
+    "logo": "/logos/jiemie_1616-6.png",
+    "chainId": "jiemie_1616-6",
+    "currencies": [
+      "uPPP"
+    ],
+    "feeCurrency": "uPPP",
+    "nativeCurrency": "uPPP",
+    "stakeCurrency": "uPPP",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Avail",
+    "rpc": "https://froopyland.dymension.xyz/kynraze_2223-1/rpc",
+    "rest": "https://froopyland.dymension.xyz/kynraze_2223-1/rest",
+    "evm": {
+      "chainId": "0x8af",
+      "rpc": "https://froopyland.dymension.xyz/kynraze_2223-1/evmrpc"
+    },
+    "chainName": "Kynraze",
+    "description": "Discover a new way to enhance your digital experience. Our platform offers a unique blend of features that cater to various needs. Our goal is to provide an all-in-one solution. Experience the future of convenience.",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-5",
+      "hubChannel": "channel-536"
+    },
+    "logo": "/logos/kynraze_2223-1.png",
+    "chainId": "kynraze_2223-1",
+    "currencies": [
+      "uKYN"
+    ],
+    "feeCurrency": "uKYN",
+    "nativeCurrency": "uKYN",
+    "stakeCurrency": "uKYN",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Avail",
+    "rpc": "https://froopyland.dymension.xyz/myrollapp_160-1/rpc",
+    "rest": "https://froopyland.dymension.xyz/myrollapp_160-1/rest",
+    "evm": {
+      "chainId": "0xa0",
+      "rpc": "https://froopyland.dymension.xyz/myrollapp_160-1/evmrpc"
+    },
+    "chainName": "SBB_Modular",
+    "description": "My Rollapp will allow all users to pay for node services without technical knowledge and for all modular projects of the Celestia ecosystem, (Avail, Celestia, dYmension, Radius, etc...)",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-7",
+      "hubChannel": "channel-260"
+    },
+    "logo": "/logos/myrollapp_160-1.png",
+    "chainId": "myrollapp_160-1",
+    "currencies": [
+      "uMOD"
+    ],
+    "feeCurrency": "uMOD",
+    "nativeCurrency": "uMOD",
+    "stakeCurrency": "uMOD",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Celestia",
+    "rpc": "https://froopyland.dymension.xyz/thaivuhien_232-1/rpc",
+    "rest": "https://froopyland.dymension.xyz/thaivuhien_232-1/rest",
+    "evm": {
+      "chainId": "0xe8",
+      "rpc": "https://froopyland.dymension.xyz/thaivuhien_232-1/evmrpc"
+    },
+    "chainName": "TVH Finance",
+    "description": "Empower Your Wealth with Decentralized Finance",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-422"
+    },
+    "logo": "/logos/thaivuhien_232-1.png",
+    "chainId": "thaivuhien_232-1",
+    "currencies": [
+      "uTVH"
+    ],
+    "feeCurrency": "uTVH",
+    "nativeCurrency": "uTVH",
+    "stakeCurrency": "uTVH",
+    "bech32Prefix": "ethm",
+    "analytics": false
+  },
+  {
+    "da": "Celestia",
+    "chainName": "JOHN-LEGEND",
+    "rpc": "https://froopyland.dymension.xyz/john_5858/rpc",
+    "rest": "https://froopyland.dymension.xyz/john_5858/rest",
+    "evm": {
+      "chainId": "0x16e2",
+      "rpc": "https://froopyland.dymension.xyz/john_5858/evmrpc"
+    },
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-0",
+      "hubChannel": "channel-4158"
+    },
+    "logo": "/logos/john_5858-1.png",
+    "chainId": "john_5858-1",
+    "currencies": [
+      "uJOHN"
+    ],
+    "feeCurrency": "uJOHN",
+    "nativeCurrency": "uJOHN",
+    "stakeCurrency": "uJOHN",
+    "bech32Prefix": "ethm"
+  },
+  {
+    "da": "Avail",
+    "rpc": "https://froopyland.dymension.xyz/linda_223344/rpc",
+    "rest": "https://froopyland.dymension.xyz/linda_223344/rest",
+    "evm": {
+      "chainId": "0x36870",
+      "rpc": "https://froopyland.dymension.xyz/linda_223344/evmrpc"
+    },
+    "chainName": "MOON",
+    "type": "RollApp",
+    "coinType": 60,
+    "ibc": {
+      "timeout": 172800000,
+      "channel": "channel-99",
+      "hubChannel": "channel-3378"
+    },
+    "logo": "/logos/linda_223344-123.png",
+    "chainId": "linda_223344-123",
+    "currencies": [
+      "uLIN"
+    ],
+    "feeCurrency": "uLIN",
+    "nativeCurrency": "uLIN",
+    "stakeCurrency": "uLIN",
+    "bech32Prefix": "ethm"
+  }
 ]

@@ -264,7 +264,7 @@
     "coinType": 60,
     "ibc": {
       "timeout": 172800000,
-      "channel": "channel-0",
+      "channel": "channel-2",
       "hubChannel": "channel-1103"
     },
     "logo": "/logos/susa.png",
