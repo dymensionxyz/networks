@@ -12,11 +12,14 @@
     "exploreTxUrl": "https://explorer.silknodes.io/dymension/tx/",
     "bech32Prefix": "dym",
     "currencies": [
-      "udym"
+      {
+        "displayDenom": "DYM",
+        "baseDenom": "udym",
+        "decimals": 18,
+        "logo": "/logos/dymension-logo.svg",
+        "type": "main"
+      }
     ],
-    "nativeCurrency": "udym",
-    "stakeCurrency": "udym",
-    "feeCurrency": "udym",
     "coinType": 60,
     "validatorsLogosStorageDir": "hub",
     "faucetUrl": "https://discord.com/channels/956961633165529098/1143231362468434022",
@@ -52,11 +55,14 @@
     "logo": "/logos/pashom_45678-1.png",
     "chainId": "pashom_45678-1",
     "currencies": [
-      "uPASH"
+      {
+        "displayDenom": "PASH",
+        "baseDenom": "uPASH",
+        "decimals": 18,
+        "logo": "/logos/pashom_45678-1.png",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uPASH",
-    "nativeCurrency": "uPASH",
-    "stakeCurrency": "uPASH",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -80,11 +86,14 @@
     "logo": "/logos/wen_1234_1.png",
     "chainId": "wen_1234-1",
     "currencies": [
-      "uWEN"
+      {
+        "displayDenom": "WEN",
+        "baseDenom": "uWEN",
+        "decimals": 18,
+        "logo": "/logos/wen_1234_1.png",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uWEN",
-    "nativeCurrency": "uWEN",
-    "stakeCurrency": "uWEN",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -108,11 +117,14 @@
     "logo": "/logos/phongdn_1_1.png",
     "chainId": "phongdn_1-1",
     "currencies": [
-      "uRAX"
+      {
+        "baseDenom": "uRAX",
+        "decimals": 18,
+        "logo": "/logos/phongdn_1_1.png",
+        "displayDenom": "RAX",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uRAX",
-    "nativeCurrency": "uRAX",
-    "stakeCurrency": "uRAX",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -136,11 +148,14 @@
     "logo": "/logos/goracle_2234-3.png",
     "chainId": "goracle_2234-3",
     "currencies": [
-      "uGORA"
+      {
+        "baseDenom": "uGORA",
+        "decimals": 18,
+        "logo": "/logos/goracle_2234-3.png",
+        "displayDenom": "GORA",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uGORA",
-    "nativeCurrency": "uGORA",
-    "stakeCurrency": "uGORA",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -163,11 +178,14 @@
     "logo": "/logos/tofake.png",
     "chainId": "tofake_1105-1",
     "currencies": [
-      "uRAX"
+      {
+        "baseDenom": "uRAX",
+        "decimals": 18,
+        "logo": "/logos/tofake.png",
+        "displayDenom": "RAX",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uRAX",
-    "nativeCurrency": "uRAX",
-    "stakeCurrency": "uRAX",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -192,11 +210,14 @@
     "logo": "/logos/gochain.png",
     "chainId": "gochain_14325-1",
     "currencies": [
-      "uGAS"
+      {
+        "baseDenom": "uGAS",
+        "decimals": 18,
+        "logo": "/logos/gochain.png",
+        "displayDenom": "GAS",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uGAS",
-    "nativeCurrency": "uGAS",
-    "stakeCurrency": "uGAS",
     "bech32Prefix": "ethm"
   },
   {
@@ -220,11 +241,14 @@
     "logo": "/logos/vidi.png",
     "chainId": "vidi_8885558881-1",
     "currencies": [
-      "uRAX"
+      {
+        "baseDenom": "uRAX",
+        "decimals": 18,
+        "logo": "/logos/vidi.png",
+        "displayDenom": "RAX",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uRAX",
-    "nativeCurrency": "uRAX",
-    "stakeCurrency": "uRAX",
     "bech32Prefix": "ethm"
   },
   {
@@ -246,11 +270,14 @@
     "logo": "/logos/susana_5339-1.png",
     "chainId": "susana_5339-1",
     "currencies": [
-      "uSUSA"
+      {
+        "baseDenom": "uSUSA",
+        "decimals": 18,
+        "logo": "/logos/susana_5339-1.png",
+        "displayDenom": "SUSA",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uSUSA",
-    "nativeCurrency": "uSUSA",
-    "stakeCurrency": "uSUSA",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -262,6 +289,7 @@
       "chainId": "0x650",
       "rpc": "https://froopyland.dymension.xyz/jiemie_1616-6/evmrpc"
     },
+    "chainId": "jiemie_1616-6",
     "chainName": "PeoplePlus",
     "description": "Born for all, for all for one, for all for one",
     "type": "RollApp",
@@ -272,13 +300,15 @@
       "hubChannel": "channel-1106"
     },
     "logo": "/logos/jiemie_1616-6.png",
-    "chainId": "jiemie_1616-6",
     "currencies": [
-      "uPPP"
+      {
+        "baseDenom": "uPPP",
+        "decimals": 18,
+        "logo": "/logos/jiemie_1616-6.png",
+        "displayDenom": "PPP",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uPPP",
-    "nativeCurrency": "uPPP",
-    "stakeCurrency": "uPPP",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -302,11 +332,14 @@
     "logo": "/logos/kynraze_2223-1.png",
     "chainId": "kynraze_2223-1",
     "currencies": [
-      "uKYN"
+      {
+        "baseDenom": "uKYN",
+        "decimals": 18,
+        "logo": "/logos/kynraze_2223-1.png",
+        "displayDenom": "KYN",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uKYN",
-    "nativeCurrency": "uKYN",
-    "stakeCurrency": "uKYN",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -330,11 +363,14 @@
     "logo": "/logos/myrollapp_160-1.png",
     "chainId": "myrollapp_160-1",
     "currencies": [
-      "uMOD"
+      {
+        "baseDenom": "uMOD",
+        "decimals": 18,
+        "logo": "/logos/myrollapp_160-1.png",
+        "displayDenom": "MOD",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uMOD",
-    "nativeCurrency": "uMOD",
-    "stakeCurrency": "uMOD",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -358,11 +394,14 @@
     "logo": "/logos/thaivuhien_232-1.png",
     "chainId": "thaivuhien_232-1",
     "currencies": [
-      "uTVH"
+      {
+        "baseDenom": "uTVH",
+        "decimals": 18,
+        "logo": "/logos/thaivuhien_232-1.png",
+        "displayDenom": "TVH",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uTVH",
-    "nativeCurrency": "uTVH",
-    "stakeCurrency": "uTVH",
     "bech32Prefix": "ethm",
     "analytics": false
   },
@@ -385,11 +424,14 @@
     "logo": "/logos/john_5858-1.png",
     "chainId": "john_5858-1",
     "currencies": [
-      "uJOHN"
+      {
+        "baseDenom": "uJOHN",
+        "decimals": 18,
+        "logo": "/logos/john_5858-1.png",
+        "displayDenom": "JOHN",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uJOHN",
-    "nativeCurrency": "uJOHN",
-    "stakeCurrency": "uJOHN",
     "bech32Prefix": "ethm"
   },
   {
@@ -411,11 +453,14 @@
     "logo": "/logos/linda_223344-123.png",
     "chainId": "linda_223344-123",
     "currencies": [
-      "uLIN"
+      {
+        "baseDenom": "uLIN",
+        "decimals": 18,
+        "logo": "/logos/linda_223344-123.png",
+        "displayDenom": "LIN",
+        "type": "main"
+      }
     ],
-    "feeCurrency": "uLIN",
-    "nativeCurrency": "uLIN",
-    "stakeCurrency": "uLIN",
     "bech32Prefix": "ethm"
   }
 ]
