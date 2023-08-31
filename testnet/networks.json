@@ -34,6 +34,7 @@
     "logo": "/logos/dymension-logo.svg",
     "type": "Hub",
     "analytics": true,
+    "rewards": false,
     "website": "https://portal.dymension.xyz"
   },
   {
@@ -64,7 +65,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Celestia",
@@ -95,7 +97,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Celestia",
@@ -126,7 +129,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Celestia",
@@ -157,7 +161,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Celestia",
@@ -187,7 +192,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Celestia",
@@ -200,7 +206,8 @@
     },
     "chainName": "Gochain",
     "type": "RollApp",
-    "analytics": false,
+    "analytics": true,
+    "rewards": false,
     "coinType": 60,
     "ibc": {
       "timeout": 172800000,
@@ -249,7 +256,9 @@
         "type": "main"
       }
     ],
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Avail",
@@ -279,7 +288,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Avail",
@@ -310,7 +320,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Avail",
@@ -341,7 +352,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Avail",
@@ -372,7 +384,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Celestia",
@@ -403,7 +416,8 @@
       }
     ],
     "bech32Prefix": "ethm",
-    "analytics": false
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Celestia",
@@ -432,7 +446,9 @@
         "type": "main"
       }
     ],
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
+    "analytics": true,
+    "rewards": false
   },
   {
     "da": "Avail",
@@ -461,6 +477,8 @@
         "type": "main"
       }
     ],
-    "bech32Prefix": "ethm"
+    "bech32Prefix": "ethm",
+    "analytics": true,
+    "rewards": false
   }
 ]
