@@ -4,7 +4,7 @@
 
 The primary point of communication for the genesis process will be the #blumbus-hub channel on the [Dymension Discord](https://discord.gg/dymension). Selected validators may participate in the genesis event of the Blumbus network. It is absolutely critical that you and your team join the Discord during launch, as it will be the coordination point in case of any hiccups or issues during the launch process. The channel is private by default in order to keep it free of spam and unnecessary noise.
 
-#### The deadline for submitting a Gentx PR is December 21 at 12:00 UTC
+#### The deadline for submitting a Gentx PR is December 20 at 12:00 UTC
 
 #### The genesis event is broken into two parts:
 
