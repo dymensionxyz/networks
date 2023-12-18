@@ -8,5 +8,6 @@ Dymension is a network of modular blockchains consisting of the Dymension Hub an
 
 **Dymension Hub**
 
+-   [Blumbus](/dymension-hub/blumbus/genesis_validators.md)
 -   [Froopyland](/dymension-hub/froopyland/genesis_validators.md)
 -   [35-C](/dymension-hub/35-C/genesis_validators.md) (NOT MAINTAINED)
