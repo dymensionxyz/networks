@@ -8,8 +8,8 @@ The primary point of communication for the genesis process will be the #blumbus-
 
 #### The genesis event is broken into two parts:
 
--   [Part 1](/dymension-hub/froopyland/genesis_validators.md#part-1): Preparing gentx
--   [Part 2](/dymension-hub/froopyland/genesis_validators.md#part-2): Starting the testnet
+-   [Part 1](/dymension-hub/blumbus/genesis_validators.md#part-1): Preparing gentx
+-   [Part 2](/dymension-hub/blumbus/genesis_validators.md#part-2): Starting the testnet
 
 After Gentxs are collected we will provide a pre-genesis.json file for review. As long as there are no recommended changes we will provide the Genesis file with the genesis time in Part 2 after the collection of Gentxs.
 
