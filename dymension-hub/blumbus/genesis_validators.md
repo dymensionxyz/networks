@@ -77,7 +77,7 @@ dymd keys add <KEY_NAME>
 dymd add-genesis-account <ADDRESS> 100000000000000000000000adym
 ```
 
-4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `100000000000000000000000adym`:
+4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated adym. Use only `100000000000000000000000adym`:
 
 ```bash
 dymd gentx <KEY_NAME> --chain-id=blumbus_111-1 100000000000000000000000adym
