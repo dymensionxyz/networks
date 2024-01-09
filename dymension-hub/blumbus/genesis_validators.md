@@ -4,7 +4,7 @@
 
 The primary point of communication for the genesis process will be the #blumbus-hub channel on the [Dymension Discord](https://discord.gg/dymension). Selected validators may participate in the genesis event of the Blumbus network. It is absolutely critical that you and your team join the Discord during launch, as it will be the coordination point in case of any hiccups or issues during the launch process. The channel is private by default in order to keep it free of spam and unnecessary noise.
 
-#### The deadline for submitting a Gentx PR is December 20 at 12:00 UTC
+#### The deadline for submitting a Gentx PR is January 10 at 14:00 UTC
 
 #### The genesis event is broken into two parts:
 
@@ -29,7 +29,7 @@ These instructions are for creating a basic setup of a single node. Validators s
 ### Install Dymension Hub:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git --branch v3.0.0-rc02
+git clone https://github.com/dymensionxyz/dymension.git --branch v3.0.0-rc03
 cd dymension
 make install
 ```
@@ -45,8 +45,8 @@ Returns:
 ```
 name: dymension
 server_name: dymd
-version: v3.0.0-rc02
-commit: d548bc8ea08728e943904cff50180d1658e32b20
+version: v3.0.0-rc03
+commit: 532317a73c24a0af40afaa5c18cc0c0624e4325f
 ```
 
 We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
@@ -54,7 +54,7 @@ We recommend saving the testnet chain-id into your Dymension client.toml. This w
 ### Save the testnet chain-id:
 
 ```
-dymd config chain-id blumbus_100-1
+dymd config chain-id blumbus_111-1
 ```
 
 ### Generate genesis transaction (gentx):
@@ -62,7 +62,7 @@ dymd config chain-id blumbus_100-1
 1. Initialize the Dymension directories and create a local genesis file with the correct chain-id. You will be asked to replace the temporary Genesis file with the finalized Genesis file once all participating validators submit their Gentx.
 
 ```bash
-dymd init <NODE_NAME> --chain-id=blumbus_100-1
+dymd init <NODE_NAME> --chain-id=blumbus_111-1
 ```
 
 2. Create a key pair:
@@ -71,16 +71,16 @@ dymd init <NODE_NAME> --chain-id=blumbus_100-1
 dymd keys add <KEY_NAME>
 ```
 
-3. Add your account to the genesis file with the given amount and the key you just created. Use only `100000000000000000000000udym`, other amounts will be ignored.
+3. Add your account to the genesis file with the given amount and the key you just created. Use only `100000000000000000000000adym`, other amounts will be ignored.
 
 ```bash
-dymd add-genesis-account <ADDRESS> 100000000000000000000000udym
+dymd add-genesis-account <ADDRESS> 100000000000000000000000adym
 ```
 
-4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `100000000000000000000000udym`:
+4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated udym. Use only `100000000000000000000000adym`:
 
 ```bash
-dymd gentx <KEY_NAME> --chain-id=blumbus_100-1 100000000000000000000000udym
+dymd gentx <KEY_NAME> --chain-id=blumbus_111-1 100000000000000000000000adym
 ```
 
 If all goes well, you will see a message similar to the following:
