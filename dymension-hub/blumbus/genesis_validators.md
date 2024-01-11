@@ -122,6 +122,33 @@ For a demonstration of a step-by-step guide to creating a PR please follow the [
 
 Please DM Ganeshti#1471 on Dymension's discord with a link of the GitHub PR. Only PRs from selected validators will be accepted. Validators must submit their PRs prior to the deadline submission date.
 
-The Dymension core team will provide Part 2 instructions for replacing the genesis.json after collecting Gentxs. Please follow on-going communication on Discord and reach out to the Dymension core team whenever you have any questions.
+# Part 2
 
-### Welcome aboard!
+Welcome to Part 2 of the Genesis Event of the Dymension Hub's testnet. We recommend reviewing `What is a Genesis File?` [here](https://github.com/cosmos/gaia/blob/main/docs/resources/genesis.md). Below you will find the source of the genesis file which includes validator gentx provided in Part 1. Follow these instructions to download the genesis file, validate, and prepare for launching the testnet!
+
+**Genesis File**
+
+```sh
+cp genesis.json ~/.dymension/config/genesis.json
+```
+
+**Genesis sha256**
+
+```bash
+sha256sum ~/.dymension/config/genesis.json
+a686b83570dcd42f2d8779fa1b4457ebf28b4f2564f127ca43e81510ef8e141c ~/.dymension/config/genesis.json
+```
+
+**Validate the Genesis file**
+
+```bash
+dymd validate-genesis
+```
+
+#### Genesis time is: 2024-01-15 14:00 UTC
+
+```bash
+dymd start
+```
+
+Once 2/3rd of staked tokens are online after genesis time the blockchain has begun!
