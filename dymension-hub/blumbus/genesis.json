@@ -1,0 +1,1194 @@
+{
+  "genesis_time": "2024-01-15T14:00:00Z",
+  "chain_id": "blumbus_111-1",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "4194304",
+      "max_gas": "10000000",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "302400",
+      "max_age_duration": "1814400000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {}
+  },
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1g3djlajjyqe6lcfz4lphc97csdgnnw249vru73",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "150000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1ycu2ey9dm6yul8y06g70eeksdge596ce65q66w",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "100000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1tc0rx0e7d7wl0zt7rsldp4x56f4yd69yujxqf6",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "100000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1ctfg2cy6sfhh8w6dvpl06ae097vzwrn4rm25mz",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "100000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1kefys73rn9h4vs0xujkcf59xnwutl0cnz9uzex",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "100000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1x9ncmxa7g7mlhjhrm9fnx6chrfr7lv306rgc55",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "10000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1kpnsc99wlljzx4hv8k4ln4t5vgy4lkcm8hfjny",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "10000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1me2pt25642ugkapnqk4ym2vnraqza9uncdyeeq",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "10000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1f6xlyv09n0uq3gzqn6pzjv3sg3cujcwynusam7",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "10000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1vcpk3ctp6s7jzq8xc4v7ae4lwpyy5vkhg3z0qn",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "10000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym1gvcgrpga2vw8wjsd83s7lzxq654c20lmh3srgg",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "10000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "dym167s995edgln7hqhz3qjk5mv563qkmkrsfzrpxa",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "adym",
+                "amount": "10000000000000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1799416800"
+          },
+          "start_time": "1736344800"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "dym1ysjlrjcankjpmpxxzk27mvzhv25e266r80p5pv",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "330000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1ycu2ey9dm6yul8y06g70eeksdge596ce65q66w",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "100000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1x9ncmxa7g7mlhjhrm9fnx6chrfr7lv306rgc55",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "10000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1gvcgrpga2vw8wjsd83s7lzxq654c20lmh3srgg",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "10000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1g3djlajjyqe6lcfz4lphc97csdgnnw249vru73",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "150000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1f6xlyv09n0uq3gzqn6pzjv3sg3cujcwynusam7",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "10000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1tc0rx0e7d7wl0zt7rsldp4x56f4yd69yujxqf6",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "100000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1vcpk3ctp6s7jzq8xc4v7ae4lwpyy5vkhg3z0qn",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "10000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1jv65s3grqf6v6jl3dp4t6c9t9rk99cd84zg6v3",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "50000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1kpnsc99wlljzx4hv8k4ln4t5vgy4lkcm8hfjny",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "10000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1kefys73rn9h4vs0xujkcf59xnwutl0cnz9uzex",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "100000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1ctfg2cy6sfhh8w6dvpl06ae097vzwrn4rm25mz",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "100000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym167s995edgln7hqhz3qjk5mv563qkmkrsfzrpxa",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "10000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "dym1me2pt25642ugkapnqk4ym2vnraqza9uncdyeeq",
+          "coins": [
+            {
+              "denom": "adym",
+              "amount": "10000000000000000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "adym",
+          "amount": "1000000000000000000000000000"
+        }
+      ],
+      "denom_metadata": [
+        {
+          "description": "Native protocol token of Dymension: DYM (adym)",
+          "denom_units": [
+            {
+              "denom": "adym",
+              "exponent": 0,
+              "aliases": []
+            },
+            {
+              "denom": "DYM",
+              "exponent": 18,
+              "aliases": []
+            }
+          ],
+          "base": "adym",
+          "display": "DYM",
+          "name": "DYM",
+          "symbol": "DYM",
+          "uri": "",
+          "uri_hash": ""
+        }
+      ]
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "adym",
+        "amount": "1000000000000000"
+      }
+    },
+    "delayedack": {},
+    "distribution": {
+      "params": {
+        "community_tax": "0.000000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": [
+          {
+            "denom": "adym",
+            "amount": "50000000000000000000000000"
+          }
+        ]
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "epochs": {
+      "epochs": [
+        {
+          "identifier": "minute",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "60s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "day",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "hour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "week",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "604800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        }
+      ]
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "evm": {
+      "accounts": [],
+      "params": {
+        "evm_denom": "adym",
+        "enable_create": false,
+        "enable_call": true,
+        "extra_eips": [],
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "berlin_block": "0",
+          "london_block": "0",
+          "arrow_glacier_block": "0",
+          "gray_glacier_block": "0",
+          "merge_netsplit_block": "0",
+          "shanghai_block": "0",
+          "cancun_block": "0"
+        },
+        "allow_unprotected_txs": false
+      }
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "feemarket": {
+      "params": {
+        "no_base_fee": true,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 2,
+        "enable_height": "0",
+        "base_fee": "1000000000",
+        "min_gas_price": "0.000000000000000000",
+        "min_gas_multiplier": "0.500000000000000000"
+      },
+      "block_gas": "0"
+    },
+    "gamm": {
+      "pools": [],
+      "next_pool_number": "1",
+      "params": {
+        "pool_creation_fee": [],
+        "enable_global_pool_fees": true,
+        "global_fees": {
+          "swap_fee": "0.002000000000000000",
+          "exit_fee": "0.000000000000000000"
+        },
+        "taker_fee": "0.001000000000000000"
+      }
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Inter Blockchain Services",
+                  "identity": "27FD74457A21B020",
+                  "website": "https://ibs.team",
+                  "security_contact": "contact@ibs.team",
+                  "details": "Inter Blockchain Services Dpos validator and Relayer of COSMOS ecosystem 🤗 #IBCGANG"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dym1x9ncmxa7g7mlhjhrm9fnx6chrfr7lv306rgc55",
+                "validator_address": "dymvaloper1x9ncmxa7g7mlhjhrm9fnx6chrfr7lv30eg562w",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "a+xC+OYHAL2+HpDOEjHoOHGkpj1IL22PrY0Hc5biamI="
+                },
+                "value": {
+                  "denom": "adym",
+                  "amount": "100000000000000000000000"
+                }
+              }
+            ],
+            "memo": "5c7d9854c7bc7fa07bc80293d4fd77196b006004@185.217.125.120:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "AhnJMnsosG057Uy+3Q4wqgWEEoSOqp9tGsDrsaONYqch"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "ROhlHf30I3YxFgUv4IMd1X3UJzvyL2AFJj5Xx8mIWi0WhsXEY4Jqv6eVjI1/pgUPDR+63RT5l+Ns5hqbom6t1QE="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Cumulo",
+                  "identity": "77158D6796D16CD0",
+                  "website": "http://cumulo.pro",
+                  "security_contact": "cumulo.pro@gmail.com",
+                  "details": "feeding your flame"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dym1kpnsc99wlljzx4hv8k4ln4t5vgy4lkcm8hfjny",
+                "validator_address": "dymvaloper1kpnsc99wlljzx4hv8k4ln4t5vgy4lkcmyu4sd7",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "JGaV9O9AAnYsaY2X+cHkv0S8k0QSjQMqje1ddVT6K0U="
+                },
+                "value": {
+                  "denom": "adym",
+                  "amount": "100000000000000000000000"
+                }
+              }
+            ],
+            "memo": "e3cdadc3c7e668307d277588aa0432a30c7c360c@217.160.102.31:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "A1bk00mt79T8hi/sKyA8G9+uGt/MEIdxnyjN2XUknSHg"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "b1tQkxodXZtK4j8ti7WCIHeYns8rPXRyp0rl2LFCjhdGWdQHWoRyQMGtQ7uY2yvvPYvw0SSVi3bR4pPTvnylZgA="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "MZONDER",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dym1gvcgrpga2vw8wjsd83s7lzxq654c20lmh3srgg",
+                "validator_address": "dymvaloper1gvcgrpga2vw8wjsd83s7lzxq654c20lm56vpkj",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "FIKVnTWVXFnxMDI0QPQCibjwbNs/j/DAguhTd37RedY="
+                },
+                "value": {
+                  "denom": "adym",
+                  "amount": "100000000000000000000000"
+                }
+              }
+            ],
+            "memo": "676c6c0d7716ed8496ddd2af942af3a0ad410c2b@85.10.201.242:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "Aq9varaxie4q4dyDwXNB36eDV/1I9qAEtug+omyOamKT"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "05gzBtluRciGZQ6xq8DE/l0omyEK/YUBZLrXpuR2kCpK0zi+uUAZgygn6pHovjO1Wb0ial/coMaQjlK0+hMQxgA="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Samanvay",
+                  "identity": "8C441CBE51570AA6",
+                  "website": "https://github.com/samanvayvalidator",
+                  "security_contact": "boobcactus@skiff.com",
+                  "details": "A fair, community focused validator. Contact me at T.me/karan8798 for more info."
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dym1me2pt25642ugkapnqk4ym2vnraqza9uncdyeeq",
+                "validator_address": "dymvaloper1me2pt25642ugkapnqk4ym2vnraqza9unmxcm86",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "GOZ6SUpOHHWu2VwmPJNoifpUHUTKdOKPVraz7O9ZSc8="
+                },
+                "value": {
+                  "denom": "adym",
+                  "amount": "100000000000000000000000"
+                }
+              }
+            ],
+            "memo": "1d0e7559a96280d45cdd6655bc6709fa81d5c17b@10.91.10.2:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "AyIoKnFJanw3jxuyw9ngbvvbKg24l84MIEHzeSt63f/3"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "SaKEKinho1dhUvRexos5jrUPdZDwNoEp/5XX0mEZJxsmg8bZG0RSS3P6Gb44eTDkOIAj/WpGC+S1S5UR3/1kkAE="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "alphab.ai",
+                  "identity": "",
+                  "website": "https://alphab.ai",
+                  "security_contact": "https://t.me/intelix",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dym1f6xlyv09n0uq3gzqn6pzjv3sg3cujcwynusam7",
+                "validator_address": "dymvaloper1f6xlyv09n0uq3gzqn6pzjv3sg3cujcwyshvl9y",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "m4Cx+B0UHjHOdpkgkbHlxdNIcrOFb2+Y35SVSOhHetE="
+                },
+                "value": {
+                  "denom": "adym",
+                  "amount": "100000000000000000000000"
+                }
+              }
+            ],
+            "memo": "edb180dabcbc9dcdfdea6801770b36173397df15@000.0.0.00.0:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "AhGbYrL33+Vrd5989GsZo0E47Fj8P6gNKrxh7fy3Ii+H"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "N1N6mCrmdf0uxiEfyVkb3gpJFEK3W1kC3kXiHzagNPdwQEC2os44rIyRH9P3tTlQN3fuIusSd90hT4RlumNNRgE="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "P2P.ORG - P2P Validator",
+                  "identity": "E12F4695036D8072",
+                  "website": "https://p2p.org",
+                  "security_contact": "cosmos-security@p2p.org",
+                  "details": "P2P.ORG Validator (P2P.org) - an early contributor. Stake with us for a secure, reliable and simple service"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dym1vcpk3ctp6s7jzq8xc4v7ae4lwpyy5vkhg3z0qn",
+                "validator_address": "dymvaloper1vcpk3ctp6s7jzq8xc4v7ae4lwpyy5vkht67d7f",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "Z1ZbOWH+CWjz9B9TkRfkQGv0P4hbT4E3k8k+/Yge24s="
+                },
+                "value": {
+                  "denom": "adym",
+                  "amount": "100000000000000000000000"
+                }
+              }
+            ],
+            "memo": "5780d06fe05e39193f2adbf6d4fc400e5619bbb4@62.146.178.42:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "A+CqXtLa3OTO5pfIpNX0Q1djutitp7ZODIbYFaph7t8E"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "posTE7e1yg1SbJN43XYs0DtcTbsdAL/ZqJgYoqJNDw5LqykE4nL87OQ8PBiGT7Xs1GI07xvTLenMJ1ucBq3nbgE="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Silk Nodes",
+                  "identity": "1326A75B9148A214",
+                  "website": "SilkNodes.io",
+                  "security_contact": "info@silknodes.io",
+                  "details": "Silk Nodes pride ourselves on being 100% bare metal validators, running our own infrastructure to validate the chains we are active on, we are also proud to say we run IBC relayer nodes to help support the networks."
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dym167s995edgln7hqhz3qjk5mv563qkmkrsfzrpxa",
+                "validator_address": "dymvaloper167s995edgln7hqhz3qjk5mv563qkmkrs2flrc8",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "5XmIceLyoR/3a5W7j03d657I0A5JJMbHhBfCcUTi1TI="
+                },
+                "value": {
+                  "denom": "adym",
+                  "amount": "100000000000000000000000"
+                }
+              }
+            ],
+            "memo": "c79912618d606eb3510f2b4ff067f2e6e508edf9@10.42.44.177:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+                  "key": "A4uJ14LPiYnqgeDMAMqS7D+plL+xTdd3UYcOHxg5w5Z6"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "7FpGQAx+D449PF8Suj+cnY9V0pKBI57+PvJiZziuazIhtbSOO7q1KRXGibFAeKDxu3kdb3hQvcjIGdiNIKbDbAA="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "adym",
+            "amount": "1000000000000000000000"
+          }
+        ],
+        "max_deposit_period": "172800s"
+      },
+      "voting_params": {
+        "voting_period": "172800s"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      }
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "incentives": {
+      "params": {
+        "distr_epoch_identifier": "minute"
+      },
+      "gauges": [],
+      "lockable_durations": [
+        "60s",
+        "604800s"
+      ],
+      "last_gauge_id": "0"
+    },
+    "lockup": {
+      "last_lock_id": "0",
+      "locks": []
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.080000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "adym",
+        "inflation_rate_change": "1.000000000000000000",
+        "inflation_max": "0.100000000000000000",
+        "inflation_min": "0.010000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "packetfowardmiddleware": {
+      "params": {
+        "fee_percentage": "0.000000000000000000"
+      },
+      "in_flight_packets": {}
+    },
+    "params": null,
+    "poolmanager": {
+      "next_pool_id": "1",
+      "pool_routes": []
+    },
+    "rollapp": {
+      "params": {
+        "dispute_period_in_blocks": "120960",
+        "deployer_whitelist": [],
+        "rollapps_enabled": false
+      },
+      "rollappList": [],
+      "stateInfoList": [],
+      "latestStateInfoIndexList": [],
+      "latestFinalizedStateIndexList": [],
+      "blockHeightToFinalizationQueueList": []
+    },
+    "sequencer": {
+      "params": {},
+      "sequencerList": [],
+      "sequencersByRollappList": [],
+      "schedulerList": []
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "10000",
+        "min_signed_per_window": "0.800000000000000000",
+        "downtime_jail_duration": "120s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.000000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 10000,
+        "bond_denom": "adym",
+        "min_commission_rate": "0.050000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "streamer": {
+      "params": {},
+      "streams": [],
+      "last_stream_id": "0"
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      }
+    },
+    "txfees": {
+      "params": {
+        "epoch_identifier": "day"
+      },
+      "basedenom": "adym",
+      "feetokens": []
+    },
+    "upgrade": {},
+    "vesting": {}
+  }
+}
