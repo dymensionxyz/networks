@@ -6,7 +6,7 @@ Dymension is a network of modular blockchains consisting of the Dymension Hub an
 
 ## Mainnet
 
--   [Mainnet](/mainnet/genesis_validators.md)
+-   [Mainnet](/mainnet/dymension/genesis_validators.md)
 
 # Testnets
 
