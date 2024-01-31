@@ -1,4 +1,5 @@
-![Copy of Copy of separate (1)](https://github.com/dymensionxyz/networks/assets/109034310/4bcf0274-a1ee-4e97-bd09-2335ce23aa2b)
+![Copy of Copy of separate (8)](https://github.com/dymensionxyz/networks/assets/109034310/58728dfc-fa81-4d60-9075-1504632ce67a)
+
 
 
 
