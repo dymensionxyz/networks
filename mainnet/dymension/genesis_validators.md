@@ -1,4 +1,6 @@
-![Dymension Genesis Validators](/static/img/mainnet-img.svg)
+![Copy of Copy of separate (1)](https://github.com/dymensionxyz/networks/assets/109034310/4bcf0274-a1ee-4e97-bd09-2335ce23aa2b)
+
+
 
 # Welcome Genesis Validators!
 
