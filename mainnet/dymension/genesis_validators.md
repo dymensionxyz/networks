@@ -57,7 +57,7 @@ We recommend saving the testnet chain-id into your Dymension client.toml. This w
 ### Save the testnet chain-id:
 
 ```
-dymd config chain-id dymension_11-1
+dymd config chain-id dymension_1100-1
 ```
 
 ### Generate genesis transaction (gentx):
@@ -65,7 +65,7 @@ dymd config chain-id dymension_11-1
 1. Initialize the Dymension directories and create a local genesis file with the correct chain-id. You will be asked to replace the temporary Genesis file with the finalized Genesis file once all participating validators submit their Gentx.
 
 ```bash
-dymd init <NODE_NAME> --chain-id=dymension_11-1
+dymd init <NODE_NAME> --chain-id=dymension_1100-1
 ```
 
 2. Create a key pair:
@@ -83,7 +83,7 @@ dymd add-genesis-account <ADDRESS> <BALANCE>adym
 4. Create the Gentx. The `dymd gentx -h` command will provide helpful flags to configure your validator node. The only required flags are chain-id and amount of self-delegated adym. Use up to the allocated amounts to your delegator address:
 
 ```bash
-dymd gentx <KEY_NAME> --chain-id=dymension_11-1 <BALANCE>adym
+dymd gentx <KEY_NAME> --chain-id=dymension_1100-1 <BALANCE>adym
 ```
 
 If all goes well, you will see a message similar to the following:
