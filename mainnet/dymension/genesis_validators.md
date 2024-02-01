@@ -1,13 +1,10 @@
 ![Copy of Copy of separate (8)](https://github.com/dymensionxyz/networks/assets/109034310/58728dfc-fa81-4d60-9075-1504632ce67a)
 
-
-
-
 # Welcome Genesis Validators!
 
 The primary point of communication for the genesis process will be the #genesis-mainnet channel on the [Dymension Discord](https://discord.gg/dymension). Selected validators may participate in the genesis event of Mainnet. It is absolutely critical that you and your team join the Discord during launch, as it will be the coordination point in case of any hiccups or issues during the launch process. The channel is private by default in order to keep it free of spam and unnecessary noise.
 
-#### The deadline for submitting a Gentx PR is TBA
+#### The deadline for submitting a Gentx PR is Friday, February 2 at 23:00 UTC
 
 #### The genesis event is broken into two parts:
 
@@ -29,10 +26,10 @@ These instructions are for creating a basic setup of a single node. Validators s
 
 **Prerequisites:** Make sure to have [Golang >=1.18](https://golang.org/). You need to ensure your GOPATH configuration is correct.
 
-### Install Dymension Hub:
+### Install Dymension:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git --branch TBA
+git clone https://github.com/dymensionxyz/dymension.git --branch v3.0.0
 cd dymension
 make install
 ```
@@ -48,8 +45,8 @@ Returns:
 ```
 name: dymension
 server_name: dymd
-version: TBA
-commit: TBA
+version: v3.0.0
+commit: c3294dc8d2dce1aa8efbc967b1dfd3b0e965b095
 ```
 
 We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
