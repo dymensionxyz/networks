@@ -74,7 +74,7 @@ dymd init <NODE_NAME> --chain-id=dymension_1100-1
 dymd keys add <KEY_NAME>
 ```
 
-3. Add your account to the genesis file with the given amount and the key you just created. Use amounts allocated to your delegator address. Please note `dymension_11-1` utilizes a base denom of `adym` with 18 decimal places.
+3. Add your account to the genesis file with the given amount and the key you just created. Use amounts allocated to your delegator address. Please note `dymension_1100-1` utilizes a base denom of `adym` with 18 decimal places.
 
 ```bash
 dymd add-genesis-account <ADDRESS> <BALANCE>adym
