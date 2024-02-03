@@ -128,7 +128,7 @@ The Dymension core team will provide Part 2 instructions for replacing the genes
 
 # Part 2
 
-Welcome to Part 2 of the Genesis Event of Dymension. We recommend reviewing `What is a Genesis File?` [here](https://github.com/cosmos/gaia/blob/main/docs/resources/genesis.md). Below you will find the source of the genesis file which includes validator gentx provided in Part 1. Follow these instructions to download the genesis file, validate, and prepare for launching the testnet!
+Welcome to Part 2 of the Genesis Event of Dymension. We recommend reviewing `What is a Genesis File?` [here](https://github.com/cosmos/gaia/blob/main/docs/resources/genesis.md). Below you will find the source of the genesis file which includes validator gentx provided in Part 1. Follow these instructions to download the genesis file, validate, and prepare for launching the Mainnet!
 
 **Genesis File**
 
