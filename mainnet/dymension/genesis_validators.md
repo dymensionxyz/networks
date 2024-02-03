@@ -149,7 +149,7 @@ sha256sum ~/.dymension/config/genesis.json
 dymd validate-genesis
 ```
 
-#### Genesis time is: 2024-01-15 14:00 UTC
+#### Genesis time is: 2024-02-06 12:00 UTC
 
 ```bash
 dymd start
