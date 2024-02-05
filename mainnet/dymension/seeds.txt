@@ -1,1 +1,1 @@
-284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:25155,2031373ae11f2ce79a5e61fb15308c860559cc64@tenderseed.ccvalidators.com:29202
+284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:25155,2031373ae11f2ce79a5e61fb15308c860559cc64@tenderseed.ccvalidators.com:29202,400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@dymension.rpc.kjnodes.com:14659
