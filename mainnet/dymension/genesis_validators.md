@@ -49,9 +49,9 @@ version: v3.0.0
 commit: c3294dc8d2dce1aa8efbc967b1dfd3b0e965b095
 ```
 
-We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
+We recommend saving the mainnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
 
-### Save the testnet chain-id:
+### Save the mainnet chain-id:
 
 ```
 dymd config chain-id dymension_1100-1
