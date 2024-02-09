@@ -1,1 +1,2 @@
-284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:25155
+284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:25155,
+258f523c96efde50d5fe0a9faeea8a3e83be22ca@seed.mainnet.dymension.aviaone.com:10290
