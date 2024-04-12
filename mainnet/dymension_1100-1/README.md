@@ -38,7 +38,7 @@ Each version is identified by a specific id, tag, block height and software upgr
 Assuming that your dymension home it's already initialized with the desired genesis and configuration,
 to replay the chain from genesis using Cosmovisor:
 
-1. Install version `v1.2.0` from the official [repository](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor).
+1. Install version `v1.2.0` or later from the official [repository](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor).
 
 Alternatively, you can download the appropriate binary for your platform from our mirrors:
 
