@@ -45,7 +45,7 @@
       "v3.0.0"
     ],
     "genesis": {
-      "genesis_url": "https://github.com/dymensionxyz/networks/raw/main/mainnet/dymension/genesis.json"
+      "genesis_url": "https://github.com/dymensionxyz/networks/raw/main/mainnet/dymension_1100-1/genesis.json"
     }
   },
   "peers": {
