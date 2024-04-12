@@ -40,7 +40,7 @@ to replay the chain from genesis using Cosmovisor:
 
 1. Install version `v1.2.0` or later from the official [repository](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor).
 
-Alternatively, you can download the appropriate binary for your platform from our mirrors:
+Alternatively, you can download the appropriate binary for your platform from mirrors:
 
 | Platform | Architecture | Cosmovisor Binary URL                                                                                      |
 |----------|--------------|------------------------------------------------------------------------------------------------------------|
