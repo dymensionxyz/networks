@@ -47,7 +47,7 @@ Alternatively, you can download the appropriate binary for your platform from mi
 | linux    | amd64        | [Download](https://osmosis.fra1.digitaloceanspaces.com/binaries/cosmovisor/cosmovisor-v1.2.0-linux-amd64)  |
 | linux    | arm64        | [Download](https://osmosis.fra1.digitaloceanspaces.com/binaries/cosmovisor/cosmovisor-v1.2.0-linux-arm64)  |
 
-1. Initialize the Cosmovisor directory following the specific structure outlined below:
+2. Initialize the Cosmovisor directory following the specific structure outlined below:
 ```bash
 <COSMOVISOR_HOME>
    ├── genesis
@@ -61,6 +61,8 @@ Alternatively, you can download the appropriate binary for your platform from mi
            └── bin
                └── dymd
 ```
+3. ffff
+4. аааа
+5. аааа
+6. 
 
-2. 
-3. 
