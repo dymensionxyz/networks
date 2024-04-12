@@ -38,14 +38,14 @@ Each version is identified by a specific id, tag, block height and software upgr
 Assuming that your dymension home it's already initialized with the desired genesis and configuration,
 to replay the chain from genesis using Cosmovisor:
 
-1. Install version `v1.3.0` from the official [repository](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor).
+1. Install version `v1.2.0` from the official [repository](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor).
 
 Alternatively, you can download the appropriate binary for your platform from our mirrors:
 
 | Platform | Architecture | Cosmovisor Binary URL                                                                                      |
 |----------|--------------|------------------------------------------------------------------------------------------------------------|
-| linux    | amd64        | [Download](https://osmosis.fra1.digitaloceanspaces.com/binaries/cosmovisor/cosmovisor-v1.3.0-linux-amd64)  |
-| linux    | arm64        | [Download](https://osmosis.fra1.digitaloceanspaces.com/binaries/cosmovisor/cosmovisor-v1.3.0-linux-arm64)  |
+| linux    | amd64        | [Download](https://osmosis.fra1.digitaloceanspaces.com/binaries/cosmovisor/cosmovisor-v1.2.0-linux-amd64)  |
+| linux    | arm64        | [Download](https://osmosis.fra1.digitaloceanspaces.com/binaries/cosmovisor/cosmovisor-v1.2.0-linux-arm64)  |
 
 1. Initialize the Cosmovisor directory following the specific structure outlined below:
 ```bash
