@@ -27,7 +27,7 @@ Each version is identified by a specific id, tag, block height and software upgr
 ```json
 {
   "binaries": {
-    "linux/amd64": "https://github.com/dymensionxyz/dymension/releases/download/v3.1.0/dymd-3.1.0-linux-amd64?",
+    "linux/amd64": "https://github.com/dymensionxyz/dymension/releases/download/v3.1.0/dymd",
     "linux/arm64": "https://github.com/dymensionxyz/dymension/releases/download/v3.1.0/dymd-3.1.0-linux-arm64?"
   }
 }
