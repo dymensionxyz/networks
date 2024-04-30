@@ -66,7 +66,6 @@ Alternatively, you can download the appropriate binary for your platform from mi
 [p2p]
 persistent_peers = "9859ade424269d42876852ec8dc1a47a1fc1268e@65.109.110.31:31890,f6e7324a4e0fc62870f8a48f07b16471b188c807@95.217.192.250:26156,c600039ef70040740ae130d455768c509d173b12@85.10.200.232:23836" 
 ```
-4. аааа
-5. аааа
-6. 
+4. Run cosmovisor with `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` 
+
 
