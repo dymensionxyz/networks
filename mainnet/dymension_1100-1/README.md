@@ -7,7 +7,7 @@ Each version is identified by a specific id, tag, block height and software upgr
 | ID    |  Tag       | Starting Block | Release                                                                  | Proposal                                             |
 |-------|-----------|----------------|--------------------------------------------------------------------------|------------------------------------------------------|
 | `v3`  | `v3.0.0`  | 0              | [Release](https://github.com/dymensionxyz/dymension/releases/tag/v3.0.0/)  | N.A. (Genesis)                                       |
-| `v3`  | `v3.1.0`  | 1159000        | [Release](https://github.com/dymensionxyz/dymension/releases/tag/v3.1.0)  | [12](https://www.mintscan.io/dymension/proposals/](https://www.mintscan.io/dymension/proposals/12)   |
+| `v3`  | `v3.1.0`  | 1159000        | [Release](https://github.com/dymensionxyz/dymension/releases/tag/v3.1.0)  | [12](https://www.mintscan.io/dymension/proposals/12)   |
 
 ## Upgrade binaries
 
