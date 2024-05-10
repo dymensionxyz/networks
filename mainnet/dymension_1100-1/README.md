@@ -64,8 +64,8 @@ Alternatively, you can download the appropriate binary for your platform from mi
 3. Replaying the chain from historical data requires the presence of at least one archive nodes in the persistent peers. Ensure that you include the following configuration in your config.toml file:
 ```toml
 [p2p]
-persistent_peers = "9859ade424269d42876852ec8dc1a47a1fc1268e@65.109.110.31:31890,f6e7324a4e0fc62870f8a48f07b16471b188c807@95.217.192.250:26156,c600039ef70040740ae130d455768c509d173b12@85.10.200.232:23836" 
+persistent_peers = "babe3d67aa5570e65953a5253eaf36c7ebfbbb44@82.223.0.229:26646,31ff5ebd7b9bf30fa5d3bfed32f9673f069544cb@65.108.228.199:26656,06da72d985baa046461706bbb4dc66329eba9fa4@65.108.74.54:21890" 
 ```
-4. Run cosmovisor with `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` 
+4. Highly recommended to run cosmovisor with `DAEMON_ALLOW_DOWNLOAD_BINARIES=false` and to use your own build binary.
 
 
